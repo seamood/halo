@@ -1,0 +1,114 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.left{
+	float: left;
+}
+.navigator{
+	width: 100%;
+	height: 41px;
+	padding-top: 30px;
+}
+.navigator .navigator_text{
+	width: 1237px;
+	height: 43px;
+	margin-left: 384px;
+}
+.navigator .navigator_text .navigator_li{
+	margin-left: 268px;
+	color:#9e5130;
+	font-family: "微软雅黑";
+	font-size: 22pt;
+}
+.navigator .navigator_text .navigator_li li{
+	float: left;
+}
+/*.navigator .navigator_text .navigator_li li:hover{
+	color: #fff;
+}*/
+.navigator .navigator_text .navigator_li li:nth-child(2){
+	margin: 0 70px;
+}
+.navigator .navigator_text .navigator_li li:nth-child(3){
+	margin-right:70px;
+}
+.navigator .navigator_text .navigator_pic{
+	margin-left: 242px;
+	width: 160px;
+}
+.navigator .navigator_text .navigator_pic img:nth-child(2){
+   margin: 0 30px;
+}
+/*=========================导航条结束=================================*/
+.rotation{
+	height: 764px;
+	background-color: pink;
+}
+.content{
+	height:300px;
+	background-color: purple;
+}
+.fen{
+	height:200px; 
+}
+.bottom{
+	height: 340px;
+	border: 1px solid #000;
+}
+.bottom .bottomContext {
+	height: 246px;
+	padding-top:54px; 
+	background-image: url(../img/fooder.png);
+}
+.bottom .bottomContext .bottomContext_adderss{
+	width: 644px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.bottom .bottomContext a{
+	font-size: 14px;
+	color: #000;
+}
+.bottom .bottomContext_logo{
+	height: 40px;
+	background-image: url(../img/bottom_bgpic.png);
+}
+.bottom .bottomContext .bottomContext_text{
+	height:145px; 
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.bottomContext_text1{	
+	height:44px;
+	margin: 40px 360px;
+	line-height: 200%;
+}
+.bottomContext_text2{
+	height:133px;
+	width: 154px; 
+	letter-spacing: 55px;
+	position: relative;
+}
+.bottomContext_text2 img{
+   margin-left:25px;
+}
+.z1{
+	position: absolute;
+	top: 60px;
+	left: 130px;
+}
+.z2{
+	position: absolute;
+	top: 60px;
+}
+.bottomContext_pic{
+	margin-left: 380px;
+	position: relative;
+	top: 60px;
+}
+.bottomContext_pic img:nth-child(2){
+	margin: 0 29px;
+}
