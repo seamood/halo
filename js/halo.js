@@ -1,18 +1,13 @@
 var navigator_li_id=$('navigator_li_id').id;
 var lis=navigator_li_id.children[0].children;
-for(var i=0;i<lis.length;i++){
-	lis[i].onclick=function (){
-		for(var j=0;j<lis.length;j++){
-			lis[j].style.color="#9e5130";
-		}
+for(var i=0;i<lis.length;i++)
+{
+	lis[i].onclick=function ()
+	{
+		for(var j=0;j<lis.length;j++){lis[j].style.color="#9e5130";}
 		this.style.color="#fff";
 	}
 }
-
-
-
-
-
 var navigator_pic_ids=$('navigator_pic_id').id;
 var imgs=navigator_pic_ids.children;
 for(var i=0;i<imgs.length;i++)
@@ -24,6 +19,19 @@ for(var i=0;i<imgs.length;i++)
 		this.src="../img/header_icon"+(this.index+1)+"jiaohu.png";
 	}
 }
+var date_new=[];
+function fn(date){
+      date_new=date;
+      console.log(date_new);
+}
+
+
+
+
+
+
+
+
 
 
 

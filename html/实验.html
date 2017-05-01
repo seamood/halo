@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="Generator" content="Sublime Text3">
+    <meta name="Author" content="深山一枯柴">
+    <meta name="website" content="http://www.lihui-v.top">
+    <meta name="Description" content="马不停蹄的🐌!">
+    <style type="text/css">
+    * {margin:0;padding:0; }
+  img {
+    vertical-align: top;
+       }
+     .w-slider {
+	    width: 610px;
+	    height: 265px;
+	    margin:100px auto;
+	    position: relative;
+	    /*  overflow: hidden;*/
+	    }
+	    .slider {
+    width: 610px;
+    height: 220px;
+}
+.slider-main {
+    width: 1220px;
+    height: 220px;
+    background-color: pink;
+}
+.slider-main-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 610px;
+    height: 220px;
+}
+.slider-main-img img {
+    width: 100%;
+    height: 220px;
+}
+.slider-main-img a{
+	display: block;
+	width: 100%;
+    height: 220px;
+}
+.slider-ctrl {
+    text-align: center;
+    padding-top: 5px;
+}
+.slider-ctrl-con {
+    width: 42px;
+    height: 10px;
+    display:inline-block;
+    cursor: pointer;
+    overflow: hidden;
+}
+.current {
+    background-position: -24px -762px;
+}
+.slider-ctrl-prev,
+.slider-ctrl-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    background:url(../images/icon.png) no-repeat 6px top;
+    width: 30px;
+    height: 35px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.slider-ctrl-prev {
+    left: 0;
+}
+.slider-ctrl-next {
+    right: 0;
+    background-position: -6px -44px;
+}
+.div2{
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+   <div class="w-slider" id="js_slider">
+		<div class="slider-main" id="slider_main_block">
+			
+		</div>
+   </div>
+    	<script type="text/javascript">
+		var date_new=[];
+		function fn(date)
+		{
+			date_new=date;
+		}
+		window.onload=function(){
+			var imgs=date_new.source_img;
+			var slider_main_block=document.getElementById('slider_main_block');
+			var name=["C","B","W","D","E","F"];
+			var color=["#124567","#543678","#325522","#954923","#696321","#087956"];
+			for(i=0;i<imgs.length;i++){
+				var img=document.createElement('img');
+				img.src=imgs[i];
+				
+				var a=document.createElement('a');
+				console.log(a);
+				a.href="#";
+				a.appendChild(img);
+				var div1=document.createElement('div');
+				div1.className="slider-main-img"
+				div1.appendChild(a);	
+				slider_main_block.appendChild(div1);
+
+				var div2=document.createElement('div');
+				div2.className="div2";
+				var p=document.createElement('p');
+				p.innerHTML=name[i];
+				div2.appendChild(p);
+				var span1=document.createElement('span');
+				span1.className="slider-ctrl-con";
+				span1.style.backgroundColor=color[i];
+				div2.appendChild(span1);
+				slider_main_block.appendChild(div2);		
+			}
+		}
+		
+    	</script>
+    	<script type="text/javascript" src="../json/halo.json"></script>
+</body>
+</html>

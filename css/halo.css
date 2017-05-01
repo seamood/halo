@@ -57,11 +57,13 @@
 .bottom{
 	height: 340px;
 	border: 1px solid #000;
+	background-image: url(../img/fooder.png);
 }
 .bottom .bottomContext {
 	height: 246px;
+	width: 1300px;
+	margin: 0 auto;
 	padding-top:54px; 
-	background-image: url(../img/fooder.png);
 }
 .bottom .bottomContext .bottomContext_adderss{
 	width: 644px;
@@ -78,18 +80,17 @@
 }
 .bottom .bottomContext .bottomContext_text{
 	height:145px; 
-	margin-bottom: 40px;
-	overflow: hidden;
+	margin-bottom: 70px;
 }
 .bottomContext_text1{	
 	height:44px;
-	margin: 40px 360px;
+	margin: 40px  370px 0 0;
 	line-height: 200%;
 }
 .bottomContext_text2{
 	height:133px;
 	width: 154px; 
-	letter-spacing: 55px;
+	letter-spacing: 58px;
 	position: relative;
 }
 .bottomContext_text2 img{
@@ -97,12 +98,12 @@
 }
 .z1{
 	position: absolute;
-	top: 60px;
-	left: 130px;
+	top:80px;
+	left: 140px;
 }
 .z2{
 	position: absolute;
-	top: 60px;
+	top: 80px;
 }
 .bottomContext_pic{
 	margin-left: 380px;
