@@ -36,6 +36,8 @@ for(var i=0;i<imgs.length;i++)
 				a.href="#";
                 a.style.backgroundImage="url("+imgs[i]+")";
 				var div1=document.createElement('div');
+                if(i==0){a.className="type1"};
+                if(i==1){a.className="type2"}
 				div1.className="slider-main-img"
 
 				div1.appendChild(a);	
@@ -57,10 +59,12 @@ for(var i=0;i<imgs.length;i++)
 				slider_main_block.appendChild(div2);
 				spans.push(span1);
 			}
-            window.onresize=function(){
             for(i=1;i<spans.length;i++){
-            	img_div[i].style.left=img_div[0].offsetWidth+"px";
-            }
+                img_div[i].style.left=img_div[0].offsetWidth+"px";}
+            window.onresize=function(){
+                for(i=1;i<spans.length;i++){
+                	img_div[i].style.left=img_div[0].offsetWidth+"px";
+                }
             }
             ps[0].style.color="#9e5130";
             spans[0].style.backgroundColor="#9e5130";
@@ -79,6 +83,14 @@ for(var i=0;i<imgs.length;i++)
                         }
                         ps[this.index].style.color="#9e5130";
                         spans[this.index].style.backgroundColor="#9e5130";
+
+
+                         if(temp!=this.index&&this.index>temp){
+                            img_div[that.index].style.left =img_div[0].offsetWidth+"px";
+                        }else if(temp!=this.index&&this.index<temp){
+                            img_div[that.index].style.left =-img_div[0].offsetWidth+"px";
+                        }    
+
 
             		    time1=setInterval(function(){
             					img_div[that.index].offsetLeft>0?w=-25:w=25;
