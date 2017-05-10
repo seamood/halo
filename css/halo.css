@@ -15,7 +15,7 @@
 	z-index: 1;
 }
 .navigator .navigator_text{
-	width: 1237px;
+	width: 1247px;
 	height: 43px;
 	margin-left: 384px;
 }
@@ -37,7 +37,7 @@
 }
 .navigator .navigator_text .navigator_pic{
 	margin-left: 242px;
-	width: 160px;
+	width: 170px;
 }
 .navigator .navigator_text .navigator_pic img:nth-child(2){
    margin: 0 30px;
@@ -45,13 +45,13 @@
 /*=========================导航条结束=================================*/
 .rotation{
 	height: 902px;
-	background-color: pink;
 }
-      .w-slider {
-	    width: 100%;
-	    height: 902px;
-	      overflow: hidden;
-	    }
+.w-slider {
+	width: 100%;
+	height: 902px;
+	position: relative;
+	overflow: hidden;
+ }
 
 .slider-main {
     width: 200%;
@@ -98,11 +98,8 @@
 	bottom: 175px;
    z-index: 1;
 }
-/*========================轮播====================================*/
-.content{
-	height:300px;
-	background-color: purple;
-}
+/*========================轮播结束====================================*/
+
 .fen{
 	height:200px; 
 }

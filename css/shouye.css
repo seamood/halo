@@ -1,0 +1,349 @@
+body{
+   background: url(../img/shouye12.png ) no-repeat ,url(../img/bag_blue.png) repeat-x,url(../img/shouye14.png) no-repeat,url(../img/bag_pink.png) repeat-x,url(../img/bag_tu.png) repeat-x;
+   background-size:  180px 390px,,80px 170px,;
+   background-position:0 1605px, 0 1772px,0 3501px,0 3501px,0 4301px;
+}
+.content{
+  width: 1204px;
+  margin: 0 auto;
+  position: relative;
+  top: -37px;
+}
+.tuzhan,.content_text,.biqili,.mianbao_center{
+	display:-moz-box;
+	display:-webkit-box;
+	display:-o-box; 
+	display:box;
+	-moz-box-pack:justify;
+	-webkit-box-pack:justify;
+	-o-box-pack:justify; 
+	box-pack:justify; 
+  position: relative;
+}
+.content .tuzhan div{
+	width: 300px;
+	height: 300px;
+	background-size:cover;
+}
+.yuan{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #99eaff;
+  position:absolute;
+  top:53px;
+  left:636px;
+}
+.sjiao{
+  border-left: 30px solid  #fff;
+  border-right: 30px solid  transparent;
+  border-top:22px solid  transparent;
+  border-bottom:22px solid transparent;
+  position: absolute;
+  top:18px;
+  left: 27px;
+}
+.content_text .div1{
+    width: 676px;
+    height: 452px;
+}
+.content_text .div3{
+    width: 528px;
+    height: 430px;
+    padding-left: 100px;
+}
+.content_text .div3 .p1{
+  font-size:66px;
+  color:#9e5130;
+  font-family:"微软雅黑";
+  margin-bottom:20px;
+}
+.content_text .div3 .p2{
+  font-size:24px;
+  color:#9e5130;
+  letter-spacing:15px;
+  font-family:"微软雅黑";
+  margin-bottom: 18px;
+}
+.content_text .div3 .tupbiao{
+	width: 16px;
+	height: 2px;
+  display: inline-block;
+	background-color: #ffdb00;
+	margin-bottom: 70px;
+}
+.content_text .div3 .p3{
+  font-size:30px;
+  color:#9e5130;
+  font-family:"微软雅黑";
+  font-weight: bold;
+  letter-spacing:17px;
+  margin-bottom: 34px;
+}
+.content_text .div3 .p4{
+  font-size:14px;
+  color:#9e5130;
+  display: inline-block;
+  width:275px; 
+  font-family:"微软雅黑";
+  margin-bottom: 14px;
+}
+.love_cakes{
+  position: relative;
+  height: 657px;
+}
+.love_cakes .biankuang{
+  float: left;
+  width: 470px;
+  height: 240px;
+  border: 1px solid #fff;
+  border-bottom:transparent;
+  border-right:transparent;
+  margin-left: 15px;
+}
+.biankuang p:nth-child(1){
+  color: #fff;
+  transform:rotate(90deg);
+  letter-spacing:34px; 
+  position: absolute;
+  top: 369px;
+  left: -90px;
+  font-size: 14px;
+}
+.biankuang p:nth-child(2){
+  color: #fff;#fff;
+  letter-spacing:39px; 
+  position: absolute;
+  top: -17px;
+  left: 1000px;
+  font-size: 14px;
+}
+.love_cakes .cakes_center{
+  width: 890px;
+  height: 536px;
+  margin:auto;
+  top: 42px;
+  position: relative;
+
+}
+.love_cakes .xiatu{
+  position: absolute;
+  left:92px; 
+  bottom:23px;
+}
+.love_cakes .cakes_center .text{
+  height: 100%;
+  width: 484px;
+  padding-left: 56px;
+  position: absolute;
+  background-color: #fff;
+}
+.text_p1{
+  font-size:62px;
+  color:#9e5130;
+  font-family:"微软雅黑";
+  letter-spacing: 17px;
+}
+.text_p2{
+   font-size:24px;
+  color:#9e5130;
+  font-family:"微软雅黑";
+  margin-bottom: 65px;
+}
+.text_p3{
+  font-size:14px;
+  color:#9e5130;
+  font-family:"微软雅黑";
+  margin-bottom: 14px;
+}
+.text_p4{
+  font-size:32px;
+  letter-spacing: 38px;
+  line-height: 200%;
+  color:#9e5130;
+  font-family:"微软雅黑";
+  position: absolute;
+  top: 50px;
+  right: 0;
+  word-wrap:break-word;
+  width: 25px;
+}
+.xian{
+  width: 96px;
+  height: 0;
+  border: 1px solid #9e5130;
+  position: absolute;
+  bottom: 92px;
+}
+.diction{
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;  
+  border-left: 8px solid #9e5130; 
+  border-right: 8px solid transparent; 
+  border-bottom: 3px solid transparent; 
+  position: absolute;
+  right: -13px;
+  top: -3px;
+}
+.love_cakes .cakes_center .cakes_center_img{
+  height: 100%;
+  width: 350px;
+  position: absolute;
+  right: 0;
+}
+.bingqili ul li{
+  width: 294px;
+  text-align: center;
+}
+.bingqili ul li img{
+ width: 294px;
+ margin-bottom: 50px;
+}
+.bingqili ul li p:nth-child(2){
+   font-size: 30px;
+   color:#9e5130;
+  font-family:"微软雅黑";
+  margin-bottom: 29px;
+}
+.bingqili ul li p:nth-child(3){
+   font-size: 14px;
+   color:#9e5130;
+  font-family:"微软雅黑";
+  margin-left: 36px;
+  width: 225px;
+}
+.mianbao,.pisa{
+  position: relative;
+}
+.mianbao_center{
+  width: 958px;
+  margin: 0 auto;
+  height: 458px;
+  background-color: #fff;
+  position: relative;
+  top:-122px;
+}
+.mianbao .mianbao_kuang{
+  width: 470px;
+  height: 240px;
+  border:1px solid #fff;
+  border-left:1px solid transparent;
+  border-bottom: 1px solid transparent;
+  float: right; 
+  margin-right:15px; 
+  position: relative;
+
+}
+
+.mianbao .mianbao_kuang p:nth-child(1){
+  color: #fff;
+  transform:rotate(90deg);
+  letter-spacing:34px; 
+  font-size: 14px; 
+  position: absolute;
+  top: 364px;
+  right: -110px;
+}
+.mianbao .mianbao_kuang p:nth-child(2){
+  color: #fff;
+  letter-spacing:39px; 
+  transform:rotate(90deg);
+  font-size: 14px;
+  position: absolute;
+  top: 592px;
+  left: -820px;
+}
+
+.mainbao_img{
+  width: 630px;
+  height: 100%;
+}
+.mainbao_text{
+  width:328px;
+  height: 100%;
+  padding-left: 56px;
+}
+
+.pisa_center{
+  width: 1100px;
+  height: 800px;
+}
+.pisa_kuang{
+  width: 604px;
+  height: 494px;
+  border: 1px solid #9e5130;
+  float: right;
+  position: relative;
+  top:350px;
+  border-left:1px solid transparent;
+  border-top: 1px solid transparent;
+}
+.pisa .pisa_kuang p:nth-child(1){
+  color: red;
+  transform:rotate(90deg);
+  letter-spacing:34px; 
+  font-size: 14px; 
+  position: absolute;
+  top: -250px;
+  right: -104px;
+}
+.pisa .pisa_kuang p:nth-child(2){
+  color: red;
+  letter-spacing:39px; 
+  font-size: 14px;
+  position: absolute;
+  top: 490px;
+  left: -352px;
+}
+.pisa_img{
+  width: 495px;
+  height: 680px;
+  position: absolute;
+  top: 58px;
+  left: 70px;
+}
+.pisa_xiaotu{
+  width: 434px;
+  height: 290px;
+  position: absolute;
+  left:-93px;
+  bottom: 0px;
+}
+.pisa_text{
+  width: 544px;
+  height: 478px;
+  position: absolute;
+  top: 58px;
+  right: 40px;
+  padding-left: 66px;
+  padding-top:200px; 
+}
+.pisa_text .pisa_p1{
+  font-size:36px;
+  color:#9e5130;
+  font-family:"微软雅黑";
+  position: relative;
+  left: -118px;
+  margin-bottom: 66px;
+}
+.pisa_text .pisa_p2{
+  font-size:14px;
+  color:#9e5130;
+  font-family:"微软雅黑";
+  margin-bottom: 54px;
+}
+.pisa_text .pisa_p3{
+  font-size:14px;
+  line-height: 200%;
+  color:#9e5130;
+  font-family:"微软雅黑";
+  word-wrap:break-word;
+  width: 320px;
+  margin-bottom: 88px;
+}
+.pisa_text .pisa_p4{
+  font-size:16px;
+  color:#9e5130;
+  font-family:"微软雅黑";
+}

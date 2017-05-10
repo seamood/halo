@@ -104,10 +104,14 @@
 				slider_main_block.appendChild(div2);
 				spans.push(span1);
 			}
-            window.onresize=function(){
-            for(i=1;i<spans.length;i++){
+
+             window.onresize=function()
+             {
+               for(i=1;i<spans.length;i++)
+               {
             	img_div[i].style.left=img_div[0].offsetWidth+"px";
-            }
+               }
+
             }
             ps[0].style.color="#9e5130";
             spans[0].style.backgroundColor="#9e5130";

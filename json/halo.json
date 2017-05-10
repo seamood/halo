@@ -6,5 +6,45 @@ fn({
 				       "../img/banner4.png",
 				       "../img/banner5.png",
 				       "../img/banner6.png"
-                      ]
+                      ],
+         "tuzhan_img":["../img/shouye1.png",
+				       "../img/shouye2.png",
+				       "../img/shouye3.png",
+				       "../img/shouye4.png"
+				       ],
+		"content_text":["../img/shouye5.png",
+		                "FOLLOW ME",
+		                "跟我学",
+		                "五彩巧克力帮帮糖",
+		                "那件幸福的小事叫早餐，美食带来的快乐，有很香很香的味道，既然生活，就要有滋有味，美味，是可以吃下的幸福记忆。"
+		               ],
+        "love_cakes":[  "蛋糕","SWWEET","幸福就是，早餐后的早安，晚安后的晚安<br>你一直在<br>湾仔的赛马、王家卫的电影、陈奕迅的歌<br>爱吃甜品的人，脾气都不坏<br>宠爱醉么么哒的你",
+				        "cake",
+				        "../img/shouye7.png"
+				        ],
+	    "bingqilin":[
+	                  ["../img/shouye8.png",
+	                             "薄荷柠檬水",
+	                            "在忙完一天的工作以后休息一会，来一杯美味的饮品绝对是一种享受"],
+	                  ["../img/shouye9.png",
+	                             "抹茶冰淇淋",
+	                            "在这个夏天，抹茶冰淇淋绝对是抹茶控的最爱，没有之一"],
+	                  ["../img/shouye10.png",
+	                             "拉花咖啡",
+	                            "醇香美味的咖啡中拉出你的模样，取名叫做想念"],
+	                ],
+	    "mianbao":[ "../img/shouye15.png" ,
+	                 "面包",
+	                 "BREAD",
+	                 "幸福就是，早餐后的早安，<br>晚安后的晚安<br>你一直在",
+				     "cake"
+				        
+				        ],
+		"pisa":["../img/shouye16.png",
+				"../img/shouye18.png",
+				"甜美生活尽在honey",
+				"enjoy",
+				"她大概是最聪明伶俐的姑娘，聪明伶俐是她的风格，是她的食品。松软、可口、聪明伶俐",
+				"more"
+		]
 })
