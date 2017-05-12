@@ -1,7 +1,7 @@
 body{
-   background: url(../img/shouye12.png ) no-repeat ,url(../img/bag_blue.png) repeat-x,url(../img/shouye14.png) no-repeat,url(../img/bag_pink.png) repeat-x,url(../img/bag_tu.png) repeat-x;
-   background-size:  180px 390px,,80px 170px,;
-   background-position:0 1605px, 0 1772px,0 3501px,0 3501px,0 4301px;
+   background: url(../img/shouye12.png ) no-repeat ,url(../img/bag_blue.png) repeat-x,url(../img/bag_blue.png) repeat-x,url(../img/shouye14.png) no-repeat,url(../img/bag_pink.png) repeat-x,url(../img/bag_tu.png) repeat-x;
+   background-size:  180px 390px,,,80px 170px,;
+   background-position:0 1605px, 0 1772px,0 1972px,0 3501px,0 3501px,0 4301px;
 }
 .content{
   width: 1204px;
@@ -280,7 +280,7 @@ body{
   border-top: 1px solid transparent;
 }
 .pisa .pisa_kuang p:nth-child(1){
-  color: red;
+  color: #9e5130;
   transform:rotate(90deg);
   letter-spacing:34px; 
   font-size: 14px; 
@@ -289,7 +289,7 @@ body{
   right: -104px;
 }
 .pisa .pisa_kuang p:nth-child(2){
-  color: red;
+  color: #9e5130;
   letter-spacing:39px; 
   font-size: 14px;
   position: absolute;

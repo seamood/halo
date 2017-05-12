@@ -4,8 +4,8 @@ for(var i=0;i<lis.length;i++)
 {
 	lis[i].onclick=function ()
 	{
-		for(var j=0;j<lis.length;j++){lis[j].style.color="#9e5130";}
-		this.style.color="#fff";
+		for(var j=0;j<lis.length;j++){lis[j].children[0].style.color="#9e5130";}
+		this.children[0].style.color="#fff";
 	}
 }
 var navigator_pic_ids=$('navigator_pic_id');

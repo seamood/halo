@@ -22,25 +22,171 @@
 	   	margin-left: -100px;
    }
    .form_text{
-   	width: 410px;
+   	width: 400px;
    	height: 390px;
-   	margin: 0 auto;
-   	border: 1px solid #222;
+   	margin: 76px auto;
    }
+  .name,.password{
+  	border-bottom:1px solid #9e5130;
+  	padding-left: 10px;
+  }
+  .name input{
+  	width:350px;
+  	height: 28px;
+  	border: 0; 
+  	font-size: 14px;
+
+  }
+  input{
+  	outline: none;
+  }
+  input::-webkit-input-placeholder{ 
+	color: #9e5130;
+	opacity:0.5;
+	font-size: 14px;
+}
+.password input{
+	width:318px;
+	height: 28px;
+	border: 0; 
+  	font-size: 14px; 
+  	position: relative;
+  	left: 10px;
+  	margin-top: 52px;
+  	margin-right: 2px;
+}
+.pass_art{
+padding-left: 42px;
+margin-top: 10px;
+}
+.pass_art a{
+	color: #9e5130;
+	font-size: 14px;
+	text-decoration: none;
+}
+.pass_art a:nth-child(2){
+	color: #9e5130;
+	font-size: 14px;
+	float: right;
+	margin-right: 10px;
+}
+button{
+	width: 400px;
+	height: 44px;
+	border: 1px solid transparent;
+	outline: none;
+	border-radius: 20px;
+	margin-top: 36px;
+	margin-bottom: 22px;
+	background-color: #9e5130;
+	text-align: center;
+	line-height: 46px;
+	font-size:18pt;
+	color: #fff;
+	word-spacing: 200px; 
+}
+.xieyi,.other{
+	color: #9e5130;
+	padding-left: 42px; 
+	font-size: 12px;
+	margin-bottom: 42px;
+}
+.xieyi a{
+	color: #9e5130;
+
+}
+.other img:nth-child(1){
+	margin-left: 26px;
+	vertical-align: middle;
+}
+.other img:nth-child(2){
+	margin: 0 48px;
+
+}
+.ditu{
+	height: 180px;
+	width: 120%;
+	background: url(../img/denglu.png) no-repeat;
+	margin-bottom:84px; 
+	box-shadow: 0px 30px 10px 0px rgba(51,51,51,0.2);
+	transform:rotateX(45deg);
+	background-color: #fff;
+	position: relative;
+	left: -10px;
+}
+
+
    </style>
 </head>
 <body>
 <div class="all">
 	<div class="mark"><img src="../img/header_logo.png"></div>
 	<div class="form_text">
-		<form>
+		<form action="shouye.html" onsubmit="return func(shet);" id='shet'>
 			<div class="name">
 				<img src="../img/header_icon3.png">
-				<input type="text" name="name" value="请输入用户名/手机号">
+				<input type="text" name="name" placeholder="请输入用户名/手机号" id="name_id">
 			</div>
+			<div class="password">
+				<img src="../img/denglu_icon3.png">
+				<input type="password" name="name" placeholder="请输入密码" id="password_id">
+				<img src="../img/denglu_icon2.png">
+			</div>
+			<div class="pass_art">
+				<a href="#"> 记住密码</a>
+				<a href="#"> 忘记密码</a>
+			</div>
+			<button type="submit" name="denglu" value="denglu" >登录</button>
+			<div class="xieyi">登录即表示您同意<a href="#">用户注册协议</a></div>
+			<div class="other">其他方式登录<a href="#"><img src="../img/denglu_icon4.png" ></a><a href="#"><img src="../img/denglu_icon5.png"></a><a href="#"><img src="../img/denglu_icon6.png"></a></div>
 			
 		</form>
+
 	</div>
+	<div class="ditu"></div>
 </div>
 </body>
+	<script type="text/javascript">
+			var name_id=document.getElementById('name_id')
+			var password_id=document.getElementById('password_id');
+			    name_id.onblur=function () 
+			    {
+                        if(!ischina(name_id.value)){
+                            name_id.value="格式错误";
+                        }
+			    };
+			    password_id.onblur=function ()
+			    {
+			    	if(!isTelCode( password_id.value))
+			    	{
+			    		password_id.value="密码由数字字母组成";
+				     }
+				}   
+				function func(){
+
+                        if(ischina(name_id.value)){
+                            if(isTelCode( password_id.value))
+			    	                 {
+			    	                 	return true;
+				                    }else{
+				                    	alert("输入错误");
+				                    	return false;
+				                    }
+                        }  else{
+				                    	alert("输入错误");
+				                    	return false;
+				                    }
+
+
+				}       
+			function isTelCode(str) {
+					var reg= /^[0-9A-Za-z]{6,18}$/;
+					return reg.test(str);
+				}
+			function ischina(str)
+                                 {
+                                    var reg=/(^[\u4E00-\u9FA5]{2,4}$)|(^[0-9]{11}$)/;/*定义验证表达式*/
+                                    return reg.test(str);/*进行验证*/
+                                }
+			</script>
 </html>
