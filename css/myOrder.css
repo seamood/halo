@@ -28,6 +28,7 @@
 }
 .navigator .navigator_text .navigator_li li{
 	float: left;
+	cursor: pointer;
 }
 
 .navigator .navigator_text .navigator_li li:nth-child(2){

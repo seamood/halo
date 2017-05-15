@@ -1,6 +1,5 @@
 var navigator_li_id=$('navigator_li_id');
 var lis=navigator_li_id.children[0].children;
-// console.log(lis)
 for(var i=0;i<lis.length;i++)
 {
 	lis[i].onclick=function ()
@@ -78,7 +77,10 @@ for(var i=0;i<imgs.length;i++)
 
             ps[0].style.color="#9e5130";
             spans[0].style.backgroundColor="#9e5130";
-            var iNow=0;
+            var iNow=1;
+            animate(img_div[iNow],{left:0});
+            img_div[iNow+1].style.left=-scrollWidth+"px";
+            setSquare();
             for(i=0;i<img_div.length;i++){
                     spans[i].index=i;
                     spans[i].onclick=function()
