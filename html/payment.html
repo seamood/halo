@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="Generator" content="Sublime Text3">
+    <meta name="Author" content="深山一枯柴">
+    <meta name="website" content="http://www.lihui-v.top">
+    <meta name="Description" content="马不停蹄的🐌!">
+    <link rel="stylesheet" type="text/css" href="../css/payment.css">
+ 
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/page.js"></script> 
+    <script type="text/javascript" src="../js/payment.js"></script>
+    <script type="text/javascript" src="fenye.json"></script>   
+</head>
+<body>
+    <!-- 导航条 -->
+    <div class="pay_navigation">
+       <div class="pay_carte">
+       	<img src="../img/header_logo.png">
+       	<ul id="menu">
+       		<li><a href="#">蛋糕</a></li>
+       		<li><a href="#">面包</a></li>
+       		<li><a href="#">西点</a></li>
+       		<li><a href="#">饮品</a></li>
+       	</ul>
+       	<ul id="function">
+       		<li><img src="../img/header_icon1.png"></li>
+       		<li><img src="../img/header_icon2.png"></li>
+       		<li><img src="../img/header_icon3.png"></li>
+       	</ul>
+       </div>
+    	
+    </div>
+   <!--  导航条结束 -->
+
+   <div class="content">
+		<div class="wen">
+	   	  	<ul>
+	   	  		<li><a href="#">首页</a></li>
+	   	  		<li>></li>
+	   	  		<li><a href="#">蛋糕</a></li>
+	   	  		<li>></li>
+	   	  		<li><a href="#">水果蛋糕蛋糕</a></li>
+	   	  	</ul>
+	   </div>
+     <div class="tu_box">
+    	   <div class="tu1" id="tu1">
+              <img src="../img/shouye 18.png" width="100%" height="100%">
+         </div>
+         <div id="huantu">
+               <ul>
+                 <li><img src="../img/zhifu 2.png"></li>
+                 <li><img src="../img/zhifu 3.png"></li>
+                 <li><img src="../img/zhifu 4.png"></li>
+               </ul>
+         </div>
+    
+     </div>
+		   	 <!--  支付框 -->
+		   	 <div class="pay_box">
+           <ul>
+             <li class="kun">
+               <span class="tite">水果蛋糕</span>
+                <div class="button_box">
+                   <input id="sub" type="button" name="sub" value="—" style="font-size:14px;">
+                   <input id="amo" type="text" name="amo"    onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                   <input id="add" type="button" name="add" value="＋" style="font-size:18px;">
+                </div>
+             </li>
+
+             <li class="kun">
+                <pre><span>尺    寸</span></pre> 
+                 <div class="annu">
+                   <ul id="aunt">
+                     <li><button class="butn" id="butn_a">8 时</button></li>
+                     <li><button class="butn" id="butn_b">12 时</button></li>
+                     <li><button class="butn" id="butn_c">14 时</button></li>
+                   </ul>
+                 </div>
+             
+             </li>
+
+             <li class="kun">
+                <span>是否配送</span>
+                <input type="checkbox" name="sex" id="yes" value=""> 
+                <label for="yes">是</label>
+                <input type="checkbox" name="sex" id="fou" value="">  
+                <label for="fou">否</label>
+             </li>
+
+             <li class="kun">
+               <pre><span>金    额</span></pre>
+                  <div class="RMB">
+                    <ul>
+                      <li class="moning">¥</li>
+                      <li class="shuzhi">78</li>
+                    </ul>
+                  </div>   
+             </li>
+              <a href="#">
+              <button id="but"><p>立即支付</p><img src="../img/icon3.png"></button>
+              </a>     
+           </ul>
+         </div>
+
+        <!--  内容中间部分 -->
+         <div class="shangjia">
+           <ul id="cai_bar">
+             <li>商家位置</li>
+             <li>本单详情</li>
+             <li>商家详情</li>
+             <li><span>56154</span>用户评价</li>
+           </ul>
+         </div>
+
+       <div class="zhanshi">
+         <ul>
+           <li class="show_img01"><img src="../img/zhifu 5.png"></li>
+           <li class="show_img02"><img src="../img/zhifu 6.png"></li>
+           <li class="jianso">
+                 <div>
+                     <p class="foodstuff"><span>分米鸡DM Chicken</span></p>
+                   <ul class="Aaddre">
+                    <pre><li><span class="addre">地址：</span> 西工区中州中路新都汇二楼</li></pre>
+                     <li>查看地图公交/驾车去这里</li>
+                     <li><span class="phone">电话: </span>  0379-65159288</p></li>
+                   </ul>
+                 </div>
+           </li>
+         </ul>
+       </div> 
+       <div class="meiwei"> 
+          <pre>
+          <h3>美味尽享</h3>
+          <hr>
+             <p>8时水果蛋糕</p>
+             <p>果香密语规格:约8英尺1,立体</p>
+             <p>生产日期：自提当日生产</p>
+             <p>保存需知：0-4℃保存5小时</p>
+             <p>免费提供蜡烛一包+刀一把+蛋糕叉6把+小盘一包，如超过，收费标准到店咨询商家</p>
+             <p>免费赠送卡片一张</p>
+             <p>免费提供包装</p>
+             <p>本款蛋糕采用美国维意公司奶油，精选水果，健康美味，0反式脂肪酸，优良品质只为你的优质生活</p>
+          </pre> 
+       </div>
+       <div class="xiangqing">
+          <h3>商家详情</h3>
+          <hr>
+         <ul>
+           <li class="wleft"><img src="../img/zhifu 7.png"></li>
+           <li class="wright"><img src="../img/zhifu 8.png"></li>
+         </ul>
+       </div>
+     <!--  用户评价 -->
+       <div class="title_mall"><h3>用户评价</h3></div>
+       <div class="yellow_bar"><hr></div>
+       <div class="pingjia" id="pingjia">
+          
+       </div>
+       <!--  分页跳转 -->
+       <div class="diaozhuanye">
+        <div><ul class="page" maxshowpageitem="5" pagelistcount="2"  id="page"></ul></div>
+       </div>
+
+     
+     <div class="retour"><a href="#"><img src="../img/icon.png"></a></div>
+
+   </div>
+
+<!-- 底部导航 -->
+<div class="bottom">
+          <div class="bottomContext">
+              <div class="bottomContext_text">
+                <div class="left bottomContext_text1">
+                  <p><a href="#">电话 : 010-123456789</a></p>
+                  <p><a href="#">邮箱 ：honey@.com</a></p>
+                </div>
+                  <div class="left bottomContext_text2">
+                  
+                      FOL<span class="z1">O</span><br><br>
+                  <img src="../img/erweima.png" ><br><br>
+                  WUS<span class="z2">L</span>
+                </div>
+                <div class="left bottomContext_pic ">
+                  <img src="../img/icon-5.png">
+                  <img src="../img/icon-6.png">
+                  <img src="../img/icon-7.png">
+                </div>
+
+              </div>
+            <div class="bottomContext_adderss">
+              Copyring© 哈尼蛋糕网 <a href="#">honey.com</a> 京ICP 证 123456 号| <a href="#">京ICP 备 15626558 号 |</a><a href="#">电子公告服务规则</a>
+            </div>
+          </div>
+        <div class="bottomContext_logo"><img src="../img/bottom_logo.png"></div>
+      </div>
+
+</body>
+</html>
+
