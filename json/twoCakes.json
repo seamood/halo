@@ -1,0 +1,61 @@
+fun({
+	"errno":0,
+	"data":{
+		"produce":[
+		{
+			"m_name01":"mousse",
+			"m_name02":"cake",
+			"m_showImg":"../img/cake01.png",
+			"m_produce":[
+			{
+				"m_produce_name":"慕斯蛋糕",
+				"m_produce_english":"mousse cake",
+				"m_produce_detail":"Form November to next September,Mangoes around the world get to maturi-ty! So before purchasing a mango,check your calendar,then your globe。",
+				"m_produce_more":"more"
+				}],
+			"m_smallImgAll":[
+			
+				"../img/cake_1.png",
+				"../img/cake3.png",
+				"../img/cake_3.png",
+				"../img/cake_4.png",
+				"../img/cake6.png"
+				],
+			 "m_bigImgAll":[
+                "../img/cake2.png",
+                "../img/cake_9.png",
+                "../img/cake01.png",
+                "../img/cake_4.png",
+                "../img/cake6.png"
+			    ],
+			  "m_produce02":[
+			{
+				"m_produce_name":"慕斯蛋糕",
+				"m_produce_english":"mousse cake",
+				"m_produce_detail":"Form November to next September,Mangoes around the world get to maturi-ty! So before purchasing a mango,check your calendar,then your globe。",
+				"m_produce_more":"life"
+				}],
+			  "m_foreImg":[
+                "../img/cake8.png",
+                "../img/cake_9.png",
+                "../img/cake10.png",
+                "../img/cake11.png",
+			    ],
+			  "m_produce03":[
+			{
+				"m_produce_name":"给你最甜的",
+				"m_produce_english":"Give you the sweetest",
+				"m_produce_detail":"Form November to next September,Mangoes around the world get to maturi-ty! So before purchasing a mango,check your calendar,then your globe。",
+				"m_produce_detail02":"Form November to next September,Mangoes around the world get to maturi-ty! So before purchasing a mango,check your calendar,then your globe。",
+				"m_produce_more":"more"
+				}],
+			  "m_produce04":[
+			{
+				"m_produce_name":"巧克力熔岩",
+				"m_produce_detail":"Form November to next September,Mangoes around the world get to maturi-ty! So before purchasing a mango,check your calendar,then your globe。",
+				}],
+
+			
+			}]
+	}
+	})

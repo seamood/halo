@@ -1,0 +1,450 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Microsoft YaHei";
+}
+.content{
+	height:3027px;
+}
+/*==========产品大小图展示部分开始==========*/
+.cake01{
+	width: 100%;
+	height: 838px; 
+	margin-top: 93px;
+}
+.cake01 .cakeTop{
+	width: 100%;
+	height: 435px;
+	position: relative;
+}
+.cake01 .tuxing01{
+	position: absolute;
+	top: 782px;
+	left: 780px;
+}
+.cake01 .tuxing02{
+	position: absolute;
+	top: 1530px;
+	left: 720px;
+	opacity: 0.3;
+}
+.cakeSort{
+	width: 200px;
+	height: 183px;
+	position: relative;
+	font-size: 18pt;
+	display: inline-block;
+	border-bottom: 2px solid #9e5130;
+	color: #9e5130;
+}
+.cakeSort span:nth-child(1){
+	display: block;
+	width: 100px;
+	height: 22px;
+	line-height: 22px;
+	letter-spacing: 4px; 
+	transform: rotate(270deg);
+	position: absolute;
+	top: 110px;
+	left: 86px;
+}
+.cakeSort span:nth-child(2){
+    display: inline-block;
+    width: 30px;
+    height: 24px;
+    font-size: 18pt;
+    text-align: right;
+    position: absolute;
+    top: 140px;
+    right: 0px;
+}
+.cakeSort span:nth-child(3){
+	display: inline-block;
+	transform:rotate(270deg);
+    width: 100px;
+    letter-spacing: 4px; 
+    height: 24px;
+    font-size: 22pt;
+    text-align: right;
+    position: absolute;
+    top: 48px;
+    left: 128px;
+}
+.cake01 .cakeTop #mousse{
+	display: inline-block;
+	transform:rotate(270deg);
+	height: 500px;
+    width: 435px;
+    letter-spacing: 4px; 
+    height: 30px;
+    font-size: 22px;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    color: #9e5130;
+}
+.cake01 .cakeTop #mousse .span01{
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	padding-left: 30px;
+}
+.cake01 .cakeTop #mousse .span02{
+	display: inline-block;
+	width: 60px;
+	height: 30px;
+	padding-left: 116px;
+}
+.cake01 .cakeTop .showBox{
+	display: inline-block;
+	width: 586px;
+	height: 433px;
+	position: absolute;
+	top: 0px;
+	left: 446px;
+	background: url(../img/cake01.png) no-repeat;
+	background-size: cover;
+	z-index: 5;
+}
+.cake01 .cakeTop .showBox .yeshu{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	text-align: center;
+	line-height: 30px;
+	color: #9e5130;
+}
+.cake01 .cakeTop .showBox .yeshu .first{
+	font-size: 18px;
+}
+.cake01 .cakeTop .showBox .yeshu .five{
+	font-size: 14px;
+}
+.cake01 .cakeTop #introduce{
+	width: 425px;
+	height: 433px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 1110px;
+	color: #9e5130;
+	z-index: 5;
+}
+.cake01 .cakeTop #introduce .spanIn01{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	font-size: 34px;
+	letter-spacing: 8px;
+	margin-top: 40px;
+	margin-bottom: 4px;
+}
+.cake01 .cakeTop #introduce .spanIn02{
+	font-size: 14px;
+}
+.cake01 .cakeTop #introduce .spanIn03{
+	display: block;
+	font-size: 12px;
+	height: 80px;
+	margin-top: 74px;
+	line-height: 25px;
+}
+.cake01 .cakeTop #introduce .spanIn04{
+	display: inline-block;
+	width: 124px;
+	height: 20px;
+	font-size: 12px;
+    margin-top: 100px;
+    text-align: right;
+    line-height: 15px;
+    background: url(../img/icon2.png) no-repeat left;
+}
+.cake01 .cakeBot{
+	width: 100%;
+	height: 150px;
+	margin-top: 68px;
+}
+.cake01 .cakeBot .cakeBot_center{
+	width: 1170px;
+	height: 150px;
+	margin: 0 auto;
+}
+.cake01 .cakeBot .cakeBot_center ul{
+	list-style-type: none;
+	width: 900px;
+	height: 150px;
+	float: right;
+}
+.cake01 .cakeBot .cakeBot_center ul li{
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-right: 36px;
+}
+.cake01 .cakeBot .cakeBot_center ul li:last-child{
+	margin-right: 0px;
+}
+.transformBig{
+	transform:scale(1.2,1.2);
+	box-shadow: 0px 10px 30px 1px rgb(59,47,49);
+}/*==========产品大小图展示部分结束==========*/
+/*==========背景黄色部分开始==========*/
+.cake02{
+	width: 100%;
+	height: 690px; 
+	position: relative;
+}
+.cake02 .cakeSort{
+	margin-top: 30px;
+}
+.cake02 .cakephoto{
+	width: 600px;
+	height: 610px;
+	background-size: cover;
+	position: absolute;
+	top: 34px;
+	left: 362px;
+}
+.cake02 .bgYellow{
+    width: 1484px;
+    height: 690px;
+    background-color: rgb(255,239,126);
+    position: absolute;
+    top: 0;
+    left: 436px;
+}
+.cake02 .bgYellow .introduce02{
+    width: 487px;
+	height: 533px;
+	display: inline-block;
+	position: absolute;
+	top: 36px;
+	left: 610px;
+	color: rgb(158,81,48);
+}
+.cake02 .bgYellow .introduce02 .spanIn05{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	font-size: 34px;
+	letter-spacing: 8px;
+	margin-top: 40px;
+}
+.cake02 .bgYellow .introduce02 .spanIn06{
+	display: inline-block;
+	font-size: 14px;
+	margin-top: 5px;
+}
+.cake02 .bgYellow .introduce02 .spanIn07{
+	display: block;
+	font-size: 12px;
+	height: 80px;
+	margin-top: 70px;
+	line-height: 25px;
+}
+.cake02 .bgYellow .introduce02 .spanIn08{
+	display: inline-block;
+	width: 110px;
+	height: 20px;
+	font-size: 12px;
+    margin-top: 90px;
+    text-align: right;
+    line-height: 15px;
+    background: url(../img/icon2.png) no-repeat left;
+}
+.cake02 .bgYellow .introduce02 .spanIn09{
+	display: block;
+	width: 100px;
+	height: 30px;
+	font-size: 14px;
+	border: 1px solid rgb(158,81,48);
+	line-height: 30px;
+	text-align: center;
+	margin-top: 58px;
+}
+.cake02 .bgYellow .introduce02 .spanIn09 a{
+	color: rgb(158,81,48)
+}
+.cake02 .bgYellow .triangle{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border: 211px solid #fff;
+	border-top:211px dotted transparent;
+	border-left:211px dotted transparent;
+	opacity: 0.35;
+}
+.cake02 .bgYellow .img01{
+	position: absolute;
+	bottom: 20px;
+	left: 480px;
+	z-index: 5;
+}
+.cake02 .bgYellow .img02{
+	position: absolute;
+	top: 315px;
+	right: 566px;
+	z-index: 5;
+}
+.cake02 .bgYellow .img03{
+	position: absolute;
+	bottom: 46px;
+	right: 170px;
+}/*==========背景黄色部分结束==========*/
+.apart{
+	width: 100%;
+	height: 170px;
+}
+/*==========巧克力部分开始==========*/
+.cake03{
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+.cake03 .chocolateImg{
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	top: 0;
+	left: 360px;
+}
+.cake03 .chocolateImg ul{
+	width: 600px;
+	height: 600px;
+	list-style-type: none;
+}
+.cake03 .chocolateImg ul li{
+	width: 280px;
+	height: 280px;
+	float: left;
+}
+.cake03 .chocolateImg ul li:nth-child(1){
+	margin-right: 38px;
+}
+.cake03 .chocolateImg ul li:nth-child(3){
+	margin: 38px 38px 0 0;
+}
+.cake03 .chocolateImg ul li:nth-child(4){
+	margin-top: 38px;
+}
+.cake03 .introduce03{
+    width: 487px;
+	height: 533px;
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	left: 1050px;
+	color: rgb(158,81,48);
+}
+.cake03 .introduce03 .spanIn10{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing: 8px;
+	margin-top: 30px;
+}
+.cake03 .introduce03 .spanIn11{
+	display: inline-block;
+	font-size: 14pt;
+	margin-top: 10px;
+	letter-spacing: 4px;
+	font-weight: bold;
+}
+.cake03 .introduce03 .spanIn12{
+	display: block;
+	font-size: 12px;
+	height: 80px;
+	margin-top: 70px;
+	line-height: 25px;
+}
+.cake03 .introduce03 .spanIn13{
+	display: block;
+	font-size: 12px;
+	height: 80px;
+	margin-top: 66px;
+	line-height: 25px;
+}
+.cake03 .introduce03 .spanIn14{
+	display: inline-block;
+	width: 124px;
+	height: 20px;
+	font-size: 12px;
+    margin-top: 73px;
+    text-align: right;
+    line-height: 15px;
+    background: url(../img/icon2.png) no-repeat left;
+}/*==========巧克力部分结束==========*/
+.apart02{
+	width: 100%;
+	height: 125px;
+}
+/*==========巧克力熔岩部分开始==========*/
+.cake04{
+	width: 100%;
+	height: 510px;
+	position: relative;
+}
+.cake04 .cakeSort{
+	margin-top: 80px;
+}
+.cake04 .introduce04{
+    width: 250px;
+	height: 290px;
+	display: inline-block;
+	position: absolute;
+	top: 120px;
+	left: 390px;
+	color: rgb(158,81,48);
+}
+.cake04 .introduce04 .spanIn15{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	font-size: 34px;
+	letter-spacing: 8px;
+	text-align: right;
+}
+.cake04 .introduce04 .spanIn16{
+	display: block;
+	font-size: 12px;
+	height: 80px;
+	margin-top: 25px;
+	line-height: 25px;
+	text-align: right;
+}
+.cake04 .introduce04 .spanIn17{
+	display: block;
+	width: 100px;
+	height: 30px;
+	font-size: 14px;
+	border: 1px solid rgb(158,81,48);
+	line-height: 30px;
+	text-align: center;
+	margin: 160px 0 0 150px;
+}
+.cake04 .introduce04 .spanIn17 a{
+	color: rgb(158,81,48)
+}
+.cake04 .rongyan{
+	width: 880px;
+	height: 432px;
+	position: absolute;
+	top: 80px;
+	left: 680px;
+}
+.cake04 .rongyan img{
+	width: 880px;
+	height: 432px;
+}
+.cake04 .Strawberry{
+	position: absolute;
+	top: 0;
+	right: 1160px;
+	z-index: 5;
+}/*==========巧克力熔岩部分结束==========*/
