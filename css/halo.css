@@ -42,7 +42,7 @@
 	margin-left: 242px;
 	width: 170px;
 }
-.navigator .navigator_text .navigator_pic img:nth-child(2){
+.navigator .navigator_text .navigator_pic a:nth-child(2){
    margin: 0 30px;
 }
 /*=========================导航条结束=================================*/
