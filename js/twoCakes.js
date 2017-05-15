@@ -32,7 +32,7 @@ function cakeProduce(date_all)
 	spanIn01.innerHTML = date_all[0].m_produce[0].m_produce_name;
 	spanIn02.innerHTML = date_all[0].m_produce[0].m_produce_english;
 	spanIn03.innerHTML = date_all[0].m_produce[0].m_produce_detail;
-	spanIn04.innerHTML = date_all[0].m_produce[0].m_produce_more;
+	spanIn04.innerHTML = "<a href=''>"+date_all[0].m_produce[0].m_produce_more+"</a>";
 	introduce.appendChild(spanIn01);
 	introduce.appendChild(spanIn02);
 	introduce.appendChild(spanIn03);
@@ -78,7 +78,7 @@ function cakeProduce(date_all)
 	spanIn05.innerHTML = date_all[0].m_produce02[0].m_produce_name;
 	spanIn06.innerHTML = date_all[0].m_produce02[0].m_produce_english;
 	spanIn07.innerHTML = date_all[0].m_produce02[0].m_produce_detail;
-	spanIn08.innerHTML = date_all[0].m_produce02[0].m_produce_more;
+	spanIn08.innerHTML = "<a href=''>"+date_all[0].m_produce02[0].m_produce_more+"</a>";
 	introduce02.insertBefore(spanIn05,spanIn09);
 	introduce02.insertBefore(spanIn06,spanIn09);
 	introduce02.insertBefore(spanIn07,spanIn09);
@@ -110,7 +110,7 @@ function cakeProduce(date_all)
 	spanIn11.innerHTML = date_all[0].m_produce03[0].m_produce_english;
 	spanIn12.innerHTML = date_all[0].m_produce03[0].m_produce_detail;
 	spanIn13.innerHTML = date_all[0].m_produce03[0].m_produce_detail02;
-	spanIn14.innerHTML = date_all[0].m_produce03[0].m_produce_more;
+	spanIn14.innerHTML = "<a href=''>"+date_all[0].m_produce03[0].m_produce_more+"</a>";
 	introduce03.appendChild(spanIn10);
 	introduce03.appendChild(spanIn11);
 	introduce03.appendChild(spanIn12);

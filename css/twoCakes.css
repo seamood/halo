@@ -3,6 +3,9 @@
 	margin: 0;
 	font-family: "Microsoft YaHei";
 }
+a{
+	color: #9e5130;
+}
 .content{
 	height:3027px;
 }
@@ -19,8 +22,8 @@
 }
 .cake01 .tuxing01{
 	position: absolute;
-	top: 782px;
-	left: 780px;
+	top: 760px;
+	left: 800px;
 }
 .cake01 .tuxing02{
 	position: absolute;
@@ -190,7 +193,7 @@
 }
 .transformBig{
 	transform:scale(1.2,1.2);
-	box-shadow: 0px 10px 30px 1px rgb(59,47,49);
+	box-shadow: 0px 15px 10px 1px #999;
 }/*==========产品大小图展示部分结束==========*/
 /*==========背景黄色部分开始==========*/
 .cake02{

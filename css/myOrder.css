@@ -138,10 +138,17 @@
 #creatContent .first_div .first_state{
 	width: 198px;
 	height: 300px;
-	line-height: 300px;
 	position: absolute;
 	top: 0;
 	left: 900px;
+}
+#creatContent .first_div .first_state .first_state_text{
+	display: inline-block;
+    width: 100px;
+    height: 44px;
+    position: absolute;
+    top: 45%;
+    left: 0;
 }
 #creatContent .first_div .first_money{
 	width: 55px;
@@ -168,6 +175,18 @@
 }
 .evaluateDiv a{
 	color: #9e5130;
+}
+.deliveDiv{
+	width: 90px;
+	height: 20px;
+	font-size: 14px;
+	position: absolute;
+	top: 60%;
+	left: 0;
+
+}
+.deliveDiv a{
+	color: #9e5130;	
 }
 
 
