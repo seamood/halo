@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的订单</title>
+    <meta name="Generator" content="Sublime Text3">
+    <meta name="Author" content="中山卉子">
+    <meta name="Description" content="初!">
+    <link rel="stylesheet" type="text/css" href="../css/myOrder.css">
+    <script type="text/javascript" src="../js/myOrder.js"></script>
+    <script type="text/javascript" src="../json/myOrder.json"></script>
+</head>
+<body>
+    <!-- 导航条部分开始 ==================================-->
+    	<div class="navigator" >
+	    	<div class="navigator_text">
+	    		<span class="left"><img src="../img/header_logo.png"></span>
+	    		<div class="left navigator_li" id="navigator_li_id">
+	    			<ul>
+	    				<li>蛋糕</li>
+	    				<li>面包</li>
+	    				<li>西点</li>
+	    				<li>饮品</li>
+	    			</ul>
+	    		</div>
+	    		<div class="navigator_pic left" id="navigator_pic_id">
+	    			<img src="../img/header_icon1.png">
+	    			<img src="../img/header_icon2jiaohu.png">
+	    			<img src="../img/header_icon3.png">
+	    		</div>
+	    	</div>
+    	</div><!-- 导航条部分结束 ================================ -->
+        <!-- 我的订单部分头部 -->
+        <div class="orderContent">
+           <div class="contentCenter">
+               <div class="orderNav">
+                   <span>个人中心</span>&gt;<span>我的订单</span>
+               </div>
+               <div class="orderColumn">
+                   <ul>
+                       <li>日期</li>
+                       <li>名称</li>
+                       <li>数量</li>
+                       <li>状态</li>
+                       <li>金额</li>
+                   </ul>
+               </div>
+               <!-- 动态创建内容总框架 -->
+               <div id="creatContent"></div>
+               <!-- 返回顶部箭头 -->
+               <div class="backTop"><a href=""><img src="../img/icon.png"/></a></div>
+               
+           </div>
+        </div>
+<!-- 底部部分  ===========================================-->
+    	<div class="bottom">
+    	    <div class="bottomContext">
+    	        <div class="bottomContext_text">
+    	        	<div class="left bottomContext_text1">
+	    	        	<p><a href="#">电话 : 010-123456789</a></p>
+	    	        	<p><a href="#">邮箱 ：honey@.com</a></p>
+    	        	</div>
+    	            <div class="left bottomContext_text2">
+    	            
+    	                FOL<span class="z1">O</span><br><br>
+	    	        	<img src="../img/erweima.png" ><br><br>
+	    	        	WUS<span class="z2">L</span>
+    	        	</div>
+    	        	<div class="left bottomContext_pic">
+    	        		<img src="../img/icon-7.png">
+    	        		<img src="../img/icon-5.png"/>
+    	        		<img src="../img/icon-6.png">
+    	        	</div>
+
+    	        </div>
+    	    	<div class="bottomContext_adderss">
+    	    		Copyring© 哈尼蛋糕网 <a href="#">honey.com</a> 京ICP 证 123456 号| <a href="#">京ICP 备 15626558 号 |</a><a href="#">电子公告服务规则</a>
+    	    	</div>
+    	    </div>
+    		<div class="bottomContext_logo"><img src="../img/bottom_logo.png"></div>
+    	</div>
+</body>
+</html>

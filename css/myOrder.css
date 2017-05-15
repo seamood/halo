@@ -1,0 +1,263 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: "微软雅黑";
+}
+.left{
+	float: left;
+}
+/*导航条部分开始===============================================*/
+.navigator{
+	width: 100%;
+	height: 68px;
+	padding-top: 30px;
+	background-color: #ff9e45;
+}
+.navigator .navigator_text{
+	width: 1247px;
+	height: 70px;
+	margin-left: 384px;
+}
+.navigator .navigator_text .navigator_li{
+	margin-left: 268px;
+	color:#9e5130;
+	/*font-family: "微软雅黑";*/
+	font-size: 22px;
+}
+.navigator .navigator_text .navigator_li li{
+	float: left;
+}
+
+.navigator .navigator_text .navigator_li li:nth-child(2){
+	margin: 0 70px;
+}
+.navigator .navigator_text .navigator_li li:nth-child(3){
+	margin-right:70px;
+}
+.navigator .navigator_text .navigator_pic{
+	margin-left: 242px;
+	width: 170px;
+}
+.navigator .navigator_text .navigator_pic img:nth-child(2){
+   margin: 0 30px;
+   
+}/*导航条部分结束=================================*/
+
+/*我的订单部分头部===============================*/
+.orderContent{
+	width: 100%;
+	position: relative;
+}
+.orderContent .contentCenter{
+	width: 1190px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+.orderContent .contentCenter .orderNav{
+	width: 100%;
+	height: 80px;
+	font-size: 22px;
+	color: #9e5130;
+}
+.orderContent .contentCenter .orderNav span{
+	display: inline-block;
+	width: 120px;
+	height: 80px;
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+.orderContent .contentCenter .orderNav span:nth-child(1){
+	margin-left: 27px;
+}
+.orderContent .contentCenter .orderColumn{
+    width: 900px;
+    height: 76px;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    margin-top: 5px;
+}
+.orderContent .contentCenter .orderColumn ul{
+	font-size: 20px;
+	color: #9e5130;
+
+}
+.orderContent .contentCenter .orderColumn ul li{
+	width: 100px;
+	height: 76px;
+	text-align: right;
+	margin-left: 84px;
+	float: left;
+}
+.orderContent .contentCenter .orderColumn ul li:first-child{
+	margin-left: 0;
+}
+/*动态创建内容部分开始========================*/
+#creatContent{
+    width: 100%;
+    position: relative;
+    top: 80px;
+}
+#creatContent .first_div{
+	width: 100%;
+	height: 300px;
+	margin-bottom: 50px;
+	position: relative;
+	font-size: 20px;
+	color: #9e5130;
+}
+#creatContent .first_div .first_date{
+	width: 192px;
+	height: 300px;
+	line-height: 300px;
+	position: absolute;
+	top: 0;
+	left: 353px;
+}
+#creatContent .first_div .first_name{
+	width: 198px;
+	height: 300px;
+	line-height: 300px;
+	position: absolute;
+	top: 0;
+	left: 532px;
+}
+#creatContent .first_div .first_number{
+	width: 198px;
+	height: 300px;
+	line-height: 300px;
+	position: absolute;
+	top: 0;
+	left: 715px;
+	letter-spacing: 4px;
+}
+#creatContent .first_div .first_state{
+	width: 198px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 900px;
+}
+#creatContent .first_div .first_state .first_state_text{
+	display: inline-block;
+    width: 100px;
+    height: 44px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+#creatContent .first_div .first_money{
+	width: 55px;
+	height: 300px;
+	line-height: 300px;
+	position: absolute;
+	top: 0;
+	right: 55px;
+	font-size: 24px;
+}
+#creatContent .first_div .first_money::before{
+	content: "￥";
+	font-size: 16px;
+}
+.evaluateDiv{
+	width: 144px;
+	height: 26px;
+	text-align: right;
+	line-height: 26px;
+	background:url(../img/icon2.png) no-repeat left;
+	position: absolute;
+	bottom: 0px;
+	left: 180px;	
+}
+.evaluateDiv a{
+	color: #9e5130;
+}
+.deliveDiv{
+	width: 90px;
+	height: 20px;
+	font-size: 14px;
+	position: absolute;
+	top: 60%;
+	left: 0;
+
+}
+.deliveDiv a{
+	color: #9e5130;	
+}
+
+
+/*返回顶部小火箭*/
+.backTop{
+	position: absolute;
+	bottom: -35px;
+	right: -67px;
+}
+
+
+
+/*底部部分*/
+.bottom{
+	height: 340px;
+	border: 1px solid #000;
+	background-image: url(../img/fooder.png);
+	position: relative;
+	top: 230px;
+}
+.bottom .bottomContext {
+	height: 246px;
+	width: 1300px;
+	margin: 0 auto;
+	padding-top:54px; 
+}
+.bottom .bottomContext .bottomContext_adderss{
+	width: 644px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.bottom .bottomContext a{
+	font-size: 14px;
+	color: #000;
+}
+.bottom .bottomContext_logo{
+	height: 40px;
+	background-image: url(../img/bottom_bgpic.png);
+}
+.bottom .bottomContext .bottomContext_text{
+	height:145px; 
+	margin-bottom: 70px;
+}
+.bottomContext_text1{	
+	height:44px;
+	margin: 40px  370px 0 0;
+	line-height: 200%;
+}
+.bottomContext_text2{
+	height:133px;
+	width: 154px; 
+	letter-spacing: 64px;
+	position: relative;
+}
+.bottomContext_text2 img{
+   margin-left:25px;
+}
+.z1{
+	position: absolute;
+	top:80px;
+	left: 140px;
+}
+.z2{
+	position: absolute;
+	top: 80px;
+}
+.bottomContext_pic{
+	margin-left: 380px;
+	position: relative;
+	top: 60px;
+}
+.bottomContext_pic img:nth-child(2){
+	margin: 0 29px;
+}

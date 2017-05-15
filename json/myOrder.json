@@ -1,0 +1,31 @@
+orderFun({
+	"errno":0,
+	"data":{
+		"information":[
+		{
+			"o_img_url":"../img/us 12.png",
+			"o_data":"2016/10/22",
+			"o_name":"华夫饼干脆",
+			"o_number":"1份",
+			"o_state":"未消费",
+			"o_money":"18.0"
+			},
+		{
+			"o_img_url":"../img/dingdan 2.png",
+			"o_data":"2016/10/22",
+			"o_name":"芝士蛋糕",
+			"o_number":"1份",
+			"o_state":"已消费",
+			"o_money":"88.0"
+			},
+		{
+			"o_img_url":"../img/dangdan 3.png",
+			"o_data":"2016/09/22",
+			"o_name":"芝士蛋糕",
+			"o_number":"1份",
+			"o_state":"未消费",
+			"o_money":"18.0"
+			},
+		]
+	}
+	})
