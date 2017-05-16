@@ -1,14 +1,14 @@
-var navigator_li_id=$('navigator_li_id');
+var navigator_li_id=$('navigator_li_id').id;
 var lis=navigator_li_id.children[0].children;
 for(var i=0;i<lis.length;i++)
 {
 	lis[i].onclick=function ()
 	{
-		for(var j=0;j<lis.length;j++){lis[j].children[0].style.color="#9e5130";}
-		this.children[0].style.color="#fff";
+		for(var j=0;j<lis.length;j++){lis[j].style.color="#9e5130";}
+		this.style.color="#fff";
 	}
 }
-var navigator_pic_ids=$('navigator_pic_id');
+var navigator_pic_ids=$('navigator_pic_id').id;
 var imgs=navigator_pic_ids.children;
 for(var i=0;i<imgs.length;i++)
 {
@@ -24,120 +24,132 @@ for(var i=0;i<imgs.length;i++)
 		{
 			date_new=date;
 		}
-        window.onload=function(){
-            var imgs=date_new.source_img;
-            var slider_main_block=document.getElementById('slider_main_block');
-            var name=["C","B","W","D","E","F"];
-            var c=260,iNow=0;
-            var img_div=[],spans=[],ps=[];
-            // 动态创建轮播图
-            for(i=0;i<imgs.length;i++){
-                var a=document.createElement('a');
-                a.href="#";
+         
+		window.onload=function(){
+			var imgs=date_new.source_img;
+			var slider_main_block=document.getElementById('slider_main_block');
+			var name=["C","B","W","D","E","F"];
+			var c=260,temp=0;
+			var img_div=[],spans=[],ps=[];
+			for(i=0;i<imgs.length;i++){
+				var a=document.createElement('a');
+				a.href="#";
                 a.style.backgroundImage="url("+imgs[i]+")";
-                if(i==0){a.className="type1"; }
-                else if(i==1){a.className="type2"}
-                var div1=document.createElement('div');
-                div1.className="slider-main-img";
-                div1.appendChild(a);    
-                slider_main_block.appendChild(div1);
-                img_div.push(div1);
-                var div2=document.createElement('div');
-                div2.className="div2";
-                var p=document.createElement('p');
-                p.innerHTML=name[i];
-                p.style.color="#fff";
+				var div1=document.createElement('div');
+                if(i==0){a.className="type1"};
+                if(i==1){a.className="type2"}
+				div1.className="slider-main-img"
+
+				div1.appendChild(a);	
+				slider_main_block.appendChild(div1);
+				img_div.push(div1);
+				var div2=document.createElement('div');
+				div2.className="div2";
+				var p=document.createElement('p');
+				p.innerHTML=name[i];
+				p.style.color="#fff";
                 ps.push(p);
-                div2.appendChild(p);
-                var span1=document.createElement('span');
-                span1.className="slider-ctrl-con";
-                span1.style.backgroundColor="#fff";
-                div2.appendChild(span1);
-                div2.style.right =c+"px";
-                c=c-50;
-                slider_main_block.appendChild(div2);
-                spans.push(span1);
+				div2.appendChild(p);
+				var span1=document.createElement('span');
+				span1.className="slider-ctrl-con";
+				span1.style.backgroundColor="#fff";
+				div2.appendChild(span1);
+				div2.style.right =c+"px";
+				c=c-50;
+				slider_main_block.appendChild(div2);
+				spans.push(span1);
+			}
+            for(i=1;i<spans.length;i++){
+                img_div[i].style.left=img_div[0].offsetWidth+"px";}
+            window.onresize=function(){
+                for(i=1;i<spans.length;i++){
+                	img_div[i].style.left=img_div[0].offsetWidth+"px";
+                }
             }
-
-            var scrollWidth = js_slider.clientWidth;
-          for(i=1;i<spans.length;i++)
-               {
-                img_div[i].style.left=scrollWidth+"px";
-               }
-             window.onresize=function()
-             {
-                scrollWidth = js_slider.clientWidth;
-               for(i=0;i<spans.length;i++)
-               {
-                if(i!=iNow){
-                img_div[i].style.left=scrollWidth+"px";}
-               }
-
-            }
-
             ps[0].style.color="#9e5130";
             spans[0].style.backgroundColor="#9e5130";
-            var iNow=0;
             for(i=0;i<img_div.length;i++){
-                    spans[i].index=i;
-                    spans[i].onclick=function()
-                    { 
-                            var that=this;
-                            if(that.index>iNow)
-                            {
-                                animate(img_div[iNow],{left:-scrollWidth});
-                                img_div[that.index].style.left=scrollWidth+"px";
-                            }
-                            else if(that.index<iNow)
-                            {
-                                 animate(img_div[iNow],{left:scrollWidth});
-                                 img_div[that.index].style.left=-scrollWidth+"px";
-                            }
-                            iNow=that.index;
-                            animate(img_div[iNow],{left:0});
-                            setSquare();            
-                    }
-            }
-
-
-            function setSquare() 
-            {
-                        for(var j=0;j<spans.length;j++)
-                        {  
-                            spans[j].style.backgroundColor="#fff";
+            	spans[i].index=i;
+            	var time=null,time1=null;
+            	spans[i].onclick=function(){
+            	       clearInterval(time);	
+            	       clearInterval(time1);
+            	        console.log("temp1="+temp);
+            	        var step=1,width=0;
+            	        var that=this;
+                        for(j=0;j<img_div.length;j++){
                             ps[j].style.color="#fff";
+                            spans[j].style.backgroundColor="#fff";
                         }
-                         ps[iNow].style.color="#9e5130";
-                         spans[iNow].style.backgroundColor="#9e5130";
-             }
+                        ps[this.index].style.color="#9e5130";
+                        spans[this.index].style.backgroundColor="#9e5130";
 
 
-            var timer = null;
-            timer = setInterval(autoplay,2000);
+                         if(temp!=this.index&&this.index>temp){
+                            img_div[that.index].style.left =img_div[0].offsetWidth+"px";
+                        }else if(temp!=this.index&&this.index<temp){
+                            img_div[that.index].style.left =-img_div[0].offsetWidth+"px";
+                        }    
 
-            function autoplay() 
-            {
-             
-                animate(img_div[iNow],{left: -scrollWidth});
-                ++iNow > img_div.length -1 ?  iNow = 0 : iNow;
-                img_div[iNow].style.left = scrollWidth + "px"; 
-                animate(img_div[iNow],{left: 0}); 
-                setSquare();  
+
+            		    time1=setInterval(function(){
+            					img_div[that.index].offsetLeft>0?w=-25:w=25;
+            					var gap=img_div[that.index].offsetLeft;	
+            					if(Math.abs(gap)<=25){
+            						clearInterval(time1);
+            						img_div[that.index].style.left=0+"px";
+            					}else{
+            					img_div[that.index].style.left =img_div[that.index].offsetLeft+w+"px";}    
+            				},10);  
+                             if(temp!=this.index&&img_div[that.index].offsetLeft>0)
+                                {  
+                                    time=setInterval(function(){
+                                        width=width+25; 
+                                        console.log("temp2="+temp);
+                                        img_div[temp].style.left=-width+"px";
+                                        if(width>=img_div[0].offsetWidth){
+                                            clearInterval(time);
+                                            img_div[temp].style.left=-img_div[0].offsetWidth+"px";
+                                            temp=that.index;
+                                        }    
+                                    },10);
+                                }
+                                else if(temp!=this.index&&img_div[that.index].offsetLeft<0)
+                                {
+                                    time=setInterval(function(){
+                                        width=width+25;
+                                        img_div[temp].style.left=width+"px";
+                                        if(width>=img_div[0].offsetWidth){
+                                            clearInterval(time);
+                                            console.log("temp3="+temp);
+                                            img_div[temp].style.left=img_div[0].offsetWidth+"px";
+                                            temp=that.index;
+                                        }
+                                    },10);
+                                }          			
+            	}
             }
-
-            js_slider.onmouseover = function(){clearInterval(timer);}
-
-            js_slider.onmouseout = function() 
-            {
-                clearInterval(timer);  
-                timer = setInterval(autoplay,3000);
-            }
-           shouye();
-        }
-         
+		}
 
 
-function $(name)
-{
-	return document.getElementById(name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+function $(name){
+	return{
+		id:document.getElementById(name),
+		class:document.getElementsByClassName(name),
+		tag:document.getElementsByTagName(name)
+	}
+
 }
