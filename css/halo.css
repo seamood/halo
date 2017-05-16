@@ -21,15 +21,19 @@
 }
 .navigator .navigator_text .navigator_li{
 	margin-left: 268px;
-	
 	font-family: "微软雅黑";
 	font-size: 22pt;
+	color:#9e5130;
 }
 .navigator .navigator_text .navigator_li li a{
 	color:#9e5130;
 }
 .navigator .navigator_text .navigator_li li{
 	float: left;
+	cursor: pointer;
+}
+.navigator .navigator_text .navigator_li li:nth-child(1){
+	color: #fff;
 }
 
 .navigator .navigator_text .navigator_li li:nth-child(2){
