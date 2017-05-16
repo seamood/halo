@@ -30,13 +30,10 @@ a{
 }
 .navigator .navigator_text .navigator_li li{
 	float: left;
-	cursor: pointer;
-	color: #9e5130;
 }
 
 .navigator .navigator_text .navigator_li li:nth-child(2){
 	margin: 0 70px;
-	color: #fff;
 }
 .navigator .navigator_text .navigator_li li:nth-child(3){
 	margin-right:70px;
