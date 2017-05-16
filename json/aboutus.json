@@ -1,0 +1,36 @@
+fn(
+
+{
+    "errno": 0,
+    "data":{
+
+      "list":[
+    {
+    	"aboutus_img_url":"../img/us 8.png",
+    	"aboutus_title":"茶水",
+    	"aboutus_text":"This taste of happiness is sweet;Every sweet has astory;"
+    },
+    {
+    	"aboutus_img_url":"../img/us 9.png",
+    	"aboutus_title":"阳台",
+    	"aboutus_text":"This taste of happiness is sweet;Every sweet has astory;"
+    },
+    {
+    	"aboutus_img_url":"../img/us 10.png",
+    	"aboutus_title":"工作",
+    	"aboutus_text":"This taste of happiness is sweet;Every sweet has astory;"
+    },
+    {
+    	"aboutus_img_url":"../img/us 11.png",
+    	"aboutus_title":"水果",
+    	"aboutus_text":"This taste of happiness is sweet;Every sweet has astory;"
+    },
+ 
+    ]
+    
+
+    }
+    }
+)
+   
+        
