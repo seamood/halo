@@ -9,6 +9,9 @@ a{
 .content{
 	height:3027px;
 }
+#navigator_li_id a[href="twoCakes.html"]{
+	color: #fff;
+}
 /*==========产品大小图展示部分开始==========*/
 .cake01{
 	width: 100%;

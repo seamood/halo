@@ -27,7 +27,7 @@ for(var i=0;i<imgs.length;i++)
         window.onload=function(){
             var imgs=date_new.source_img;
             var slider_main_block=document.getElementById('slider_main_block');
-            var name=["C","B","W","D","E","F"];
+            var name=["C","B","W","D"];
             var c=260,iNow=0;
             var img_div=[],spans=[],ps=[];
             // 动态创建轮播图
@@ -77,12 +77,12 @@ for(var i=0;i<imgs.length;i++)
 
             ps[0].style.color="#9e5130";
             spans[0].style.backgroundColor="#9e5130";
-            var iNow=0;
+            var iNow=0; var that;
             for(i=0;i<img_div.length;i++){
                     spans[i].index=i;
                     spans[i].onclick=function()
                     { 
-                            var that=this;
+                             that=this;
                             if(that.index>iNow)
                             {
                                 animate(img_div[iNow],{left:-scrollWidth});
@@ -108,7 +108,7 @@ for(var i=0;i<imgs.length;i++)
                             ps[j].style.color="#fff";
                         }
                          ps[iNow].style.color="#9e5130";
-                         spans[iNow].style.backgroundColor="#9e5130";
+                         spans[iNow].style.backgroundColor="#ffbddf";
              }
 
 

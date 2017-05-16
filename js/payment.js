@@ -10,18 +10,27 @@ window.onload =function(){
 		var lis = ul.getElementsByTagName("a");
 		 lis[0].style.color = "white";
 		 for (var i = 0; i < lis.length; i++) {
-		 	lis[i].onmouseover = function () {
-		 		for(var j=0;j<lis.length;j++){
-		 			lis[j].style.color ="";
-		 		}
-		 		this.style.color = "white";
-		 	}
-		 }
-		 ul.onmouseout=function(){
-		 	for(var j=0;j<lis.length;j++){
-		 			lis[j].style.color ="";
-		 		}
-		 	lis[0].style.color="white";
+		 // 	lis[i].onmouseover = function () {
+		 // 		for(var j=0;j<lis.length;j++){
+		 // 			lis[j].style.color ="";
+		 // 		}
+		 // 		this.style.color = "white";
+		 // 	}
+		 // }
+		 // ul.onmouseout=function(){
+		 // 	for(var j=0;j<lis.length;j++){
+		 // 			lis[j].style.color ="";
+		 // 		}
+		 // 	lis[0].style.color="white";
+     
+      lis[i].index=i;
+            lis[i].onclick=function () {
+              for (var j = 0; j < lis.length; j++) {
+                lis[j].style.color=""; 
+              }
+              this.style.color="white";
+            }
+            
 		 }
 
 		 // 改变小图标
@@ -66,10 +75,9 @@ window.onload =function(){
                 }
             }//换图结束
             // pay页面加减
-		    // function $(id){return document.getElementById(id)}
-		     var sub=$("#sub");
-		     var add=$("#add");
-		     var amo=$("#amo")
+		     var sub=document.getElementById('sub');
+		     var add=document.getElementById('add');
+		     var amo=document.getElementById('amo');
 		     var i=amo.value;
 		    add.onclick = function(){
 		        var i=amo.value;

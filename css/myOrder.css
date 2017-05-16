@@ -203,7 +203,6 @@
 /*底部部分*/
 .bottom{
 	height: 340px;
-	border: 1px solid #000;
 	background-image: url(../img/fooder.png);
 	position: relative;
 	top: 230px;
