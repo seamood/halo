@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="../css/test.css">
+  <link rel="stylesheet" type="text/css" href="../css/halo.css">
+	<script type="text/javascript" src="../js/test.js"></script>
+  <script type="text/javascript" src="../json/test.json"></script>
+</head>
+<body>
+ <!-- 头部 -->
+  <div class="all">
+      <div class="head">
+           <div class="navigation">
+              <div class="navigation_box">
+                  <div class="navigation_logo">
+                       <a href=""><img src="../img/header_logo.png"></a>
+                  </div>
+                  <div class="navigation_bar">
+                      <ul id="navigation_bar">
+                      <li><a href="twoCakes.html" style="color:#fff;">蛋糕</a></li>
+                      <li><a href="twoBread.html">面包</a></li>
+                      <li><a href="#">西点</a></li>
+                      <li><a href="#">饮品</a></li>
+                     </ul>
+                 </div>
+                 <div  class="navigation_right" id="navigation_right">
+                    <a href=""><img src="../img/header_icon1.png"></a>
+                    <a href="myOrder.html"><img src="../img/header_icon2.png"></a>
+                   <a href=""><img src="../img/header_icon3.png"></a>
+                 </div>
+              </div>
+           </div>
+           <script type="text/javascript">
+             var a_img=document.getElementById('navigation_right').children;
+             // console.log(a_img.length);
+             for(var i=0;i<a_img.length;i++)
+             {
+                   a_img[i].index=i;
+                   a_img[i].onmouseover=function () 
+                   {
+                     for(var j=0;j<a_img.length;j++)
+                      {
+                        
+                        a_img[j].children[0].src="../img/header_icon"+(j+1)+".png";
+                      }
+                       this.children[0].src="../img/header_icon"+(this.index+1)+"jiaohu.png";
+                   }
+                   a_img[i].onmouseout=function () 
+                   {
+                     for(var j=0;j<a_img.length;j++)
+                      {
+                        a_img[j].children[0].src="../img/header_icon"+(j+1)+".png";
+                      } 
+                   }
+             }
+           </script>
+      </div>
+      <div class="middle">
+         <div class="title">
+         <a href="">首页</a>>蛋糕
+         </div>
+         <div id="ullis">
+             <div>
+               <ul class="uls_a">
+                   <div style="float:left;">品牌：</div>
+                   <div style="float:left" id="ul_a"></div>
+               </ul>
+             </div>
+             <div>
+               <ul class="uls_a">
+                  <div style="float:left">类型：</div>
+                  <div style="float:left" id="ul_b"></div>
+               </ul>
+            </div>
+             <div ><ul class="uls_a"><div style="float:left">用途：</div><div style="float:left" id="ul_c"></div></ul></div>
+         </div>
+         <div id="show">
+
+         </div>
+         <div class="line"></div>
+         <div id="middle_right">
+
+         </div>
+
+      </div>
+       <div style="height: 200px;"></div>
+        <div class="bottom" >
+            <div class="bottomContext">
+                <div class="bottomContext_text">
+                    <div class="left bottomContext_text1">
+                        <p><a href="#">电话 : 010-123456789</a></p>
+                        <p><a href="#">邮箱 ：honey@.com</a></p>
+                    </div>
+                    <div class="left bottomContext_text2" style="color: #313031">
+                    
+                        FOL<span class="z1" style="color: #313031">O</span><br><br>
+                        <img src="../img/erweima.png" ><br><br>
+                        WUS<span class="z2" style="color: #313031">L</span>
+                    </div>
+                    <div class="left bottomContext_pic ">
+                        <img src="../img/icon-5.png">
+                        <img src="../img/icon-6.png">
+                        <img src="../img/icon-7.png">
+                    </div>
+
+                </div>
+                <div class="bottomContext_adderss" style="color: #313031">
+                    Copyring© 哈尼蛋糕网 <a href="#">honey.com</a> 京ICP 证 123456 号| <a href="#">京ICP 备 15626558 号 |</a><a href="#">电子公告服务规则</a>
+                </div>
+            </div>
+            <div class="bottomContext_logo"><img src="../img/bottom_logo.png"></div>
+        </div>
+  </div>
+</body>
+</html>
+
