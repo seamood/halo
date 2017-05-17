@@ -1,33 +1,31 @@
-var navigator_li_id=$('navigator_li_id');
-var lis=navigator_li_id.children[0].children;
-for(var i=0;i<lis.length;i++)
-{
-	lis[i].onclick=function ()
-	{
-		for(var j=0;j<lis.length;j++){lis[j].children[0].style.color="#9e5130";}
-		this.children[0].style.color="#fff";
-	}
-}
-var navigator_pic_ids=$('navigator_pic_id');
-var imgs=navigator_pic_ids.children;
-for(var i=0;i<imgs.length;i++)
-{
-	imgs[i].index=i;
-	imgs[i].onmouseover=function () 
-	{
-		for(var j=0;j<imgs.length;j++){imgs[j].children[0].src="../img/header_icon"+(j+1)+".png";}
-		this.children[0].src="../img/header_icon"+(this.index+1)+"jiaohu.png";
-	}
-    imgs[i].onmouseout=function () 
-    {
-        for(var j=0;j<imgs.length;j++){imgs[j].children[0].src="../img/header_icon"+(j+1)+".png";}
-    }
-}
-      var date_new=[];
-		function fn(date)
-		{
-			date_new=date;
-		}
+ var a_img=document.getElementById('navigator_pic_id').children;
+             console.log(a_img);
+             for(var i=0;i<a_img.length;i++)
+             {
+                   a_img[i].index=i;
+                   a_img[i].onmouseover=function () 
+                   {
+                     for(var j=0;j<a_img.length;j++)
+                      {
+                        
+                        a_img[j].children[0].src="../img/header_icon"+(j+1)+".png";
+                      }
+                       this.children[0].src="../img/header_icon"+(this.index+1)+"jiaohu.png";
+                   }
+                   a_img[i].onmouseout=function () 
+                   {
+                     for(var j=0;j<a_img.length;j++)
+                      {
+                        a_img[j].children[0].src="../img/header_icon"+(j+1)+".png";
+                      } 
+                  }
+             }
+             // ==================导航条=================
+ var date_new=[];
+        function fn(date)
+        {
+            date_new=date;
+        }
         window.onload=function(){
             var imgs=date_new.source_img;
             var slider_main_block=document.getElementById('slider_main_block');
@@ -65,9 +63,9 @@ for(var i=0;i<imgs.length;i++)
             }
 
             var scrollWidth = js_slider.clientWidth;
-          for(i=1;i<spans.length;i++)
-               {
-                img_div[i].style.left=scrollWidth+"px";
+          for(i=0;i<spans.length;i++)
+               {if(i!=4){img_div[i].style.left=scrollWidth+"px";}
+                
                }
              window.onresize=function()
              {
@@ -75,14 +73,15 @@ for(var i=0;i<imgs.length;i++)
                for(i=0;i<spans.length;i++)
                {
                 if(i!=iNow){
+                    console.log(iNow)
                 img_div[i].style.left=scrollWidth+"px";}
                }
 
             }
 
-            // ps[0].style.color="#9e5130";
-            // spans[0].style.backgroundColor="#9e5130";
-            var iNow=0; var that;
+            ps[4].style.color="#1a9350";
+            spans[4].style.backgroundColor="#1a9350";
+            var iNow=4; var that;
             for(i=0;i<img_div.length;i++){
                     spans[i].index=i;
                     spans[i].onclick=function()
@@ -112,8 +111,8 @@ for(var i=0;i<imgs.length;i++)
                             spans[j].style.backgroundColor="#fff";
                             ps[j].style.color="#fff";
                         }
-                         ps[iNow].style.color="#ffbddf";
-                         spans[iNow].style.backgroundColor="#ffbddf";
+                         ps[iNow].style.color="#1a9350";
+                         spans[iNow].style.backgroundColor="#1a9350";
              }
 
 
@@ -137,12 +136,11 @@ for(var i=0;i<imgs.length;i++)
                 clearInterval(timer);  
                 timer = setInterval(autoplay,3000);
             }
-           shouye();
         }
          
 
 
 function $(name)
 {
-	return document.getElementById(name)
+    return document.getElementById(name)
 }

@@ -1,0 +1,75 @@
+fun({
+    "errno": 0,
+    "data": {
+        "total": 200,
+        "list": [
+          [
+             ["不限","元祖","好利来","克里斯汀","稻香村","米旗","皇冠","面包新语","其他"],
+             ["不限","海绵蛋糕","戚风蛋糕","天使蛋糕","重油蛋糕","奶酪蛋糕","冰淇淋蛋糕","其他"],
+             ["不限","宴会蛋糕","酒会蛋糕","婚礼蛋糕","生日蛋糕","其他",]
+          ],
+          [
+            {
+            	"img_name":"../img/sanji 1.png",
+            	"merchant_name":"元祖",
+            	"merchant_address":"建业凯旋广场",
+            	"good_type":"元气谷物早餐",
+            	"price":18.8,
+            	"hot":9826,
+            },
+            {
+            	"img_name":"../img/sanji 1.png",
+            	"merchant_name":"元祖",
+            	"merchant_address":"建业凯旋广场",
+            	"good_type":"温暖黑巧克力",
+            	"price":18.8,
+            	"hot":9826,
+            },
+             {
+            	"img_name":"../img/sanji 1.png",
+            	"merchant_name":"元祖",
+            	"merchant_address":"建业凯旋广场",
+            	"good_type":"元气谷物早餐",
+            	"price":18.8,
+            	"hot":9826,
+            },
+             {
+            	"img_name":"../img/sanji 1.png",
+            	"merchant_name":"元祖",
+            	"merchant_address":"建业凯旋广场",
+            	"good_type":"温暖黑巧克力",
+            	"price":18.8,
+            	"hot":9826,
+            }
+        ],
+          [
+           {"erweima":"../img/erweima.png",
+            "erweima_address":"扫码下载哈尼 APP"
+           },
+           {"erweima":"../img/erweima.png",
+            "erweima_address":"扫码关注微信"
+        }
+           ],
+          [
+            {
+             "imgs":"../img/sanji 3.png",
+             "goods_name":"松软糖霜蛋糕",
+             "price":18.8,
+            },
+            {
+             "imgs":"../img/sanji 6.png",
+             "goods_name":"松软糖霜蛋糕",
+             "price":18.8,
+            },
+            {
+             "imgs":"../img/sanji 9.png",
+             "goods_name":"松软糖霜蛋糕",
+             "price":18.8,
+            },
+
+
+          ],
+
+        ]
+    }
+})

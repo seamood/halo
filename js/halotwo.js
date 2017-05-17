@@ -17,7 +17,8 @@ for(var i=0;i<imgs.length;i++)
     {
         for(var j=0;j<imgs.length;j++){imgs[j].children[0].src="../img/header_icon"+(j+1)+".png";}
         this.children[0].src="../img/header_icon"+(this.index+1)+"jiaohu.png";
-    }imgs[i].onmouseout=function () 
+    }
+    imgs[i].onmouseout=function () 
     {
         for(var j=0;j<imgs.length;j++){imgs[j].children[0].src="../img/header_icon"+(j+1)+".png";}
     }
@@ -81,7 +82,7 @@ for(var i=0;i<imgs.length;i++)
 
             ps[2].style.color="#9e5130";
             spans[2].style.backgroundColor="#9e5130";
-            var iNow=0;
+            var iNow=2;
             for(i=0;i<img_div.length;i++){
                     spans[i].index=i;
                     spans[i].onclick=function()

@@ -81,7 +81,7 @@ for(var i=0;i<imgs.length;i++)
 
             ps[1].style.color="#9e5130";
             spans[1].style.backgroundColor="#9e5130";
-            var iNow=0;
+            var iNow=1;
             for(i=0;i<img_div.length;i++){
                     spans[i].index=i;
                     spans[i].onclick=function()
