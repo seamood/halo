@@ -77,7 +77,7 @@ window.onload = function()
         	first_div.appendChild(first_money);
         };
 	}
-     var navigator_li_id=$('navigator_li_id');
+        var navigator_li_id=$('navigator_li_id');
         var lis=navigator_li_id.children[0].children;
         for(var i=0;i<lis.length;i++)
         {
@@ -97,5 +97,13 @@ window.onload = function()
                 for(var j=0;j<imgs.length;j++){imgs[j].src="../img/header_icon"+(j+1)+".png";}
                 this.src="../img/header_icon"+(this.index+1)+"jiaohu.png";
             }
+             imgs[i].onmouseout=function () {
+                for(var j=0;j<imgs.length;j++){imgs[j].src="../img/header_icon"+(j+1)+".png";}
+               imgs[1].src="../img/header_icon2jiaohu.png";}
         }
+
+
+
+
+
 }

@@ -15,9 +15,12 @@ for(var i=0;i<imgs.length;i++)
 	imgs[i].index=i;
 	imgs[i].onmouseover=function () 
 	{
-		for(var j=0;j<imgs.length;j++){imgs[j].src="../img/header_icon"+(j+1)+".png";}
-		this.src="../img/header_icon"+(this.index+1)+"jiaohu.png";
-	}
+		for(var j=0;j<imgs.length;j++){imgs[j].children[0].src="../img/header_icon"+(j+1)+".png";}
+		this.children[0].src="../img/header_icon"+(this.index+1)+"jiaohu.png";
+	}imgs[i].onmouseout=function () 
+    {
+        for(var j=0;j<imgs.length;j++){imgs[j].children[0].src="../img/header_icon"+(j+1)+".png";}
+    }
 }
       var date_new=[];
 		function fn(date)
@@ -27,7 +30,7 @@ for(var i=0;i<imgs.length;i++)
         window.onload=function(){
             var imgs=date_new.source_img;
             var slider_main_block=document.getElementById('slider_main_block');
-            var name=["C","B","W","D"];
+            var name=["A","C","B","W","D"];
             var c=260,iNow=0;
             var img_div=[],spans=[],ps=[];
             // 动态创建轮播图
@@ -44,6 +47,7 @@ for(var i=0;i<imgs.length;i++)
                 img_div.push(div1);
                 var div2=document.createElement('div');
                 div2.className="div2";
+                if(i==0){div2.style.display="none"}
                 var p=document.createElement('p');
                 p.innerHTML=name[i];
                 p.style.color="#fff";
@@ -75,8 +79,8 @@ for(var i=0;i<imgs.length;i++)
 
             }
 
-            ps[0].style.color="#9e5130";
-            spans[0].style.backgroundColor="#9e5130";
+            // ps[0].style.color="#9e5130";
+            // spans[0].style.backgroundColor="#9e5130";
             var iNow=0; var that;
             for(i=0;i<img_div.length;i++){
                     spans[i].index=i;
@@ -107,7 +111,7 @@ for(var i=0;i<imgs.length;i++)
                             spans[j].style.backgroundColor="#fff";
                             ps[j].style.color="#fff";
                         }
-                         ps[iNow].style.color="#9e5130";
+                         ps[iNow].style.color="#ffbddf";
                          spans[iNow].style.backgroundColor="#ffbddf";
              }
 

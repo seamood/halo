@@ -1,24 +1,26 @@
 var navigator_li_id=$('navigator_li_id');
 var lis=navigator_li_id.children[0].children;
-// console.log(lis)
 for(var i=0;i<lis.length;i++)
 {
-	lis[i].onclick=function ()
-	{
-		for(var j=0;j<lis.length;j++){lis[j].style.color="#9e5130";}
-		this.style.color="#fff";
-	}
+    lis[i].onclick=function ()
+    {
+        for(var j=0;j<lis.length;j++){lis[j].children[0].style.color="#9e5130";}
+        this.children[0].style.color="#fff";
+    }
 }
 var navigator_pic_ids=$('navigator_pic_id');
 var imgs=navigator_pic_ids.children;
 for(var i=0;i<imgs.length;i++)
 {
-	imgs[i].index=i;
-	imgs[i].onmouseover=function () 
-	{
-		for(var j=0;j<imgs.length;j++){imgs[j].src="../img/header_icon"+(j+1)+".png";}
-		this.src="../img/header_icon"+(this.index+1)+"jiaohu.png";
-	}
+    imgs[i].index=i;
+    imgs[i].onmouseover=function () 
+    {
+        for(var j=0;j<imgs.length;j++){imgs[j].children[0].src="../img/header_icon"+(j+1)+".png";}
+        this.children[0].src="../img/header_icon"+(this.index+1)+"jiaohu.png";
+    }
+    imgs[i].onmouseout=function () {
+        for(var j=0;j<imgs.length;j++){imgs[j].children[0].src="../img/header_icon"+(j+1)+".png";}
+    }
 }
       var date_new=[];
 		function fn(date)
@@ -28,7 +30,7 @@ for(var i=0;i<imgs.length;i++)
         window.onload=function(){
             var imgs=date_new.source_img;
             var slider_main_block=document.getElementById('slider_main_block');
-            var name=["C","B","W","D","E","F"];
+            var name=["F","C","B","W","D"];
             var c=260,iNow=0;
             var img_div=[],spans=[],ps=[];
             // 动态创建轮播图
@@ -45,6 +47,7 @@ for(var i=0;i<imgs.length;i++)
                 img_div.push(div1);
                 var div2=document.createElement('div');
                 div2.className="div2";
+                if(i==0){div2.style.display="none"}
                 var p=document.createElement('p');
                 p.innerHTML=name[i];
                 p.style.color="#fff";
@@ -61,9 +64,9 @@ for(var i=0;i<imgs.length;i++)
             }
 
             var scrollWidth = js_slider.clientWidth;
-          for(i=1;i<spans.length;i++)
+          for(i=0;i<spans.length;i++)
                {
-                img_div[i].style.left=scrollWidth+"px";
+                if(i!=1){ img_div[i].style.left=scrollWidth+"px";}
                }
              window.onresize=function()
              {
@@ -76,8 +79,8 @@ for(var i=0;i<imgs.length;i++)
 
             }
 
-            ps[0].style.color="#9e5130";
-            spans[0].style.backgroundColor="#9e5130";
+            ps[1].style.color="#9e5130";
+            spans[1].style.backgroundColor="#9e5130";
             var iNow=0;
             for(i=0;i<img_div.length;i++){
                     spans[i].index=i;
