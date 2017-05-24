@@ -330,7 +330,6 @@ position: relative;
 }
 .aboutus_life div{
 	font-size: 12px;
-	font-weight: bold;
 }
 .aboutus_life img,a{
 	position: relative;
@@ -401,7 +400,7 @@ position: relative;
 .aboutus_jionus{
 	width: 900px;
 	font-size: 12px;
-	font-weight: bold;
+
 	position: relative;
 	top: -180px;
 	left: 266px;

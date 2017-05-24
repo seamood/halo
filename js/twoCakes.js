@@ -78,7 +78,7 @@ function cakeProduce(date_all)
 	spanIn05.innerHTML = date_all[0].m_produce02[0].m_produce_name;
 	spanIn06.innerHTML = date_all[0].m_produce02[0].m_produce_english;
 	spanIn07.innerHTML = date_all[0].m_produce02[0].m_produce_detail;
-	spanIn08.innerHTML = "<a href=''>"+date_all[0].m_produce02[0].m_produce_more+"</a>";
+	spanIn08.innerHTML = "<a href='#'>"+date_all[0].m_produce02[0].m_produce_more+"</a>";
 	introduce02.insertBefore(spanIn05,spanIn09);
 	introduce02.insertBefore(spanIn06,spanIn09);
 	introduce02.insertBefore(spanIn07,spanIn09);

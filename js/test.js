@@ -7,7 +7,7 @@ function Get(id){
     {
     	date_new = data_all.data.list;//拿到JSON里的list
     	all_date = data_all.data.list;
-    	console.log(date_new);
+
     }
     window.onload=function(){
  function Create(cE,Cl,Ele,aCl){
@@ -20,14 +20,12 @@ function Get(id){
 	if(Ele=='img'&&a)Ele.src=a;
 	else Ele.innerHTML=a;
    }
-   console.log(date_new[0][0]);
+
  var uls_a=document.getElementsByClassName("uls_a");
- console.log(uls_a);
+
   for(var i=0;i<date_new[0].length;i++){
-  console.log(date_new[0].length)
   	for(var j=0;j<date_new[0][i].length;j++)
   	{
-      // console.log(date_new[0][i][j]);
       var lis=document.createElement("li");
       lis.innerHTML=date_new[0][i][j];
       uls_a[i].appendChild(lis);
@@ -56,7 +54,7 @@ function Get(id){
      imgs.className="img";
      imgs.src=date_new[1][i].img_name;
      lis_b.appendChild(imgs);
-
+      imgs.index=i;
      var merchant_name=document.createElement("span");
      merchant_name.className="merchant_name";
      merchant_name.innerHTML="商家："+date_new[1][i].merchant_name;
@@ -67,7 +65,6 @@ function Get(id){
      merchant_address.className="merchant_address";
      merchant_address.innerHTML="("+date_new[1][i].merchant_address+")";
      lis_b.appendChild(merchant_address);
-
      var good_type=document.createElement("p");
      good_type.className="good_type";
      good_type.innerHTML=date_new[1][i].good_type;
@@ -87,6 +84,12 @@ function Get(id){
      hot.className="hot";
      hot.innerHTML=date_new[1][i].hot+" 人评价";
      lis_b.appendChild(hot);
+      imgs.onclick=function(){
+         window.location.href='payment.html';
+         localStorage.setItem("img_src",this.src);
+         localStorage.setItem("img_name",date_new[1][this.index].good_type);
+         localStorage.setItem("img_price",date_new[1][this.index].price);
+      }
 
    }
    }
@@ -119,19 +122,18 @@ function Get(id){
     eat.className="eat";
     eat.innerHTML="最近想吃";
     middle_right.appendChild(eat);
-
-    console.log(date_new[3]);
     for(var i=0;i<date_new[3].length;i++)
    {
    	var show_div=document.createElement("div");
-   	show_div.className="show_div";
+        show_div.className="show_div";
    	Get("middle_right").appendChild(show_div);
+
 
    	var show_img=document.createElement("img");
    	show_img.className="show_img";
    	show_img.src=date_new[3][i].imgs;
    	show_div.appendChild(show_img);
-
+     show_img.index=i;
    	var goods_name=document.createElement("p");
    	goods_name.className="goods_name";
    	goods_name.innerHTML=date_new[3][i].goods_name;
@@ -147,10 +149,14 @@ function Get(id){
    	show_price.className="show_price";
    	show_div.appendChild(show_price);
 
-   
+   show_img.onclick=function(){
+         window.location.href='payment.html';
+         localStorage.setItem("img_src",this.src);
+         localStorage.setItem("img_name",date_new[3][this.index].goods_name);
+         localStorage.setItem("img_price",date_new[3][this.index].price);
+      }
 
-
-
+  
    }
   
   

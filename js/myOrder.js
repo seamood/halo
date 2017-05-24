@@ -83,7 +83,7 @@ window.onload = function()
         {
             lis[i].onclick=function ()
             {
-                for(var j=0;j<lis.length;j++){lis[j].style.color="#9e5130";}
+                for(var j=0;j<lis.length;j++){lis[j].children[0].style.color="#9e5130";}
                 this.style.color="#fff";
             }
         }
@@ -94,14 +94,14 @@ window.onload = function()
             imgs[i].index=i;
             imgs[i].onmouseover=function () 
             {
-                for(var j=0;j<imgs.length;j++){imgs[j].src="../img/header_icon"+(j+1)+".png";}
-                this.src="../img/header_icon"+(this.index+1)+"jiaohu.png";
+                for(var j=0;j<imgs.length;j++){imgs[j].children[0].src="../img/header_icon"+(j+1)+".png";}
+                this.children[0].src="../img/header_icon"+(this.index+1)+"jiaohu.png";
             }
              imgs[i].onmouseout=function () {
-                for(var j=0;j<imgs.length;j++){imgs[j].src="../img/header_icon"+(j+1)+".png";}
-               imgs[1].src="../img/header_icon2jiaohu.png";}
+                for(var j=0;j<imgs.length;j++){imgs[j].children[0].src="../img/header_icon"+(j+1)+".png";}
+               imgs[1].children[0].src="../img/header_icon2jiaohu.png";}
         }
-
+        imgs[1].children[0].src="../img/header_icon2jiaohu.png";
 
 
 

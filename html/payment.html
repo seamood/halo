@@ -21,9 +21,9 @@
        	<img src="../img/header_logo.png">
        	<ul id="menu">
        		<li><a href="twoCakes.html">蛋糕</a></li>
-       		<li><a href="twoBread.html">面包</a></li>
-       		<li><a href="#">西点</a></li>
-       		<li><a href="#">饮品</a></li>
+              <li><a href="twoBread.html">面包</a></li>
+              <li><a href="AboutUs.html">西点</a></li>
+              <li><a href="drink.html">饮品</a></li>
        	</ul>
        	<ul id="function">
        		<li><a href="#"><img src="../img/header_icon1.png"></a></li>
@@ -42,12 +42,12 @@
 	   	  		<li>></li>
 	   	  		<li><a href="#">蛋糕</a></li>
 	   	  		<li>></li>
-	   	  		<li><a href="#">水果蛋糕蛋糕</a></li>
+	   	  		<li><a href="#" id="protact_name">水果蛋糕蛋糕</a></li>
 	   	  	</ul>
 	   </div>
      <div class="tu_box">
     	   <div class="tu1" id="tu1">
-              <img src="../img/shouye 18.png" width="100%" height="100%">
+              <img src="../img/shouye 18.png" width="100%" height="100%" id="img_zhu">
          </div>
          <div id="huantu">
                <ul>
@@ -56,7 +56,7 @@
                  <li><img src="../img/zhifu 4.png"></li>
                </ul>
          </div>
-    
+
      </div>
 		   	 <!--  支付框 -->
 		   	 <div class="pay_box">
@@ -198,5 +198,15 @@
       </div>
 
 </body>
+   <script type="text/javascript">
+  
+    var img_zhu=document.getElementById('img_zhu');
+    var protact_name=document.getElementById('protact_name');
+    protact_name.innerHTML=localStorage.getItem("img_name");
+    img_zhu.src= localStorage.getItem("img_src");
+   var shuzhi=document.getElementsByClassName('shuzhi')[0];
+   shuzhi.innerHTML=localStorage.getItem("img_price");
+    
+    </script>
 </html>
 

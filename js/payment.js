@@ -10,18 +10,6 @@ window.onload =function(){
 		var lis = ul.getElementsByTagName("a");
 		 lis[0].style.color = "white";
 		 for (var i = 0; i < lis.length; i++) {
-		 // 	lis[i].onmouseover = function () {
-		 // 		for(var j=0;j<lis.length;j++){
-		 // 			lis[j].style.color ="";
-		 // 		}
-		 // 		this.style.color = "white";
-		 // 	}
-		 // }
-		 // ul.onmouseout=function(){
-		 // 	for(var j=0;j<lis.length;j++){
-		 // 			lis[j].style.color ="";
-		 // 		}
-		 // 	lis[0].style.color="white";
      
       lis[i].index=i;
             lis[i].onclick=function () {
